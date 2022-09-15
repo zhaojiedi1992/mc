@@ -1,0 +1,460 @@
+ShopName: sg
+Command: sg
+DisplayName: '&9&l&n系统收购'
+signs:
+  text: '[sg]'
+  NeedPermissionToCreateSign: true
+
+shop:
+  WHEAT:
+    RewardType: money
+    Reward: 1.5
+    PriceType: itemall
+    Price:
+    - type:WHEAT
+    - amount:1
+    MenuItem:
+    - type:WHEAT
+    - amount:1
+    - name:&2煤炭
+    - lore:&2%reward%
+    - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  BAMBOO:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:BAMBOO
+      - amount:1
+    MenuItem:
+      - type:BAMBOO
+      - amount:1
+      - name:&b竹子
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 2
+    ExtraPermission: ''
+  MELON:
+    RewardType: money
+    Reward: 3
+    PriceType: itemall
+    Price:
+    - type:MELON
+    - amount:1
+    MenuItem:
+    - type:MELON
+    - amount:1
+    - name:&2西瓜
+    - lore:&2%reward%
+    - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 3
+    ExtraPermission: ''
+  PUMPKIN:
+    RewardType: money
+    Reward: 3
+    PriceType: itemall
+    Price:
+      - type:PUMPKIN
+      - amount:1
+    MenuItem:
+      - type:PUMPKIN
+      - amount:1
+      - name:&2南瓜
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 4
+    ExtraPermission: ''
+  SWEET_BERRIES:
+    RewardType: money
+    Reward: 1.5
+    PriceType: itemall
+    Price:
+      - type:SWEET_BERRIES
+      - amount:1
+    MenuItem:
+      - type:SWEET_BERRIES
+      - amount:1
+      - name:&2甜浆果
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 5
+    ExtraPermission: ''
+  BEETROOT:
+    RewardType: money
+    Reward: 1.5
+    PriceType: itemall
+    Price:
+      - type:BEETROOT
+      - amount:1
+    MenuItem:
+      - type:BEETROOT
+      - amount:1
+      - name:&2甜菜
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 6
+    ExtraPermission: ''
+  POTATO:
+    RewardType: money
+    Reward: 0.5
+    PriceType: itemall
+    Price:
+      - type:POTATO
+      - amount:1
+    MenuItem:
+      - type:POTATO
+      - amount:1
+      - name:&2马铃薯
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 7
+    ExtraPermission: ''
+  CARROT:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:CARROT
+      - amount:1
+    MenuItem:
+      - type:CARROT
+      - amount:1
+      - name:&2胡萝卜
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 8
+    ExtraPermission: ''
+  CACTUS:
+    RewardType: money
+    Reward: 0.5
+    PriceType: itemall
+    Price:
+      - type:CACTUS
+      - amount:1
+    MenuItem:
+      - type:CACTUS
+      - amount:1
+      - name:&2仙人掌
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 9
+    ExtraPermission: ''
+  DIAMOND:
+    RewardType: money
+    Reward: 30
+    PriceType: itemall
+    Price:
+      - type:DIAMOND
+      - amount:1
+    MenuItem:
+      - type:DIAMOND
+      - amount:1
+      - name:&2煤炭
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 10
+    ExtraPermission: ''
+  RAW_GOLD:
+    RewardType: money
+    Reward: 8
+    PriceType: itemall
+    Price:
+      - type:RAW_GOLD
+      - amount:1
+    MenuItem:
+      - type:RAW_GOLD
+      - amount:1
+      - name:&2粗金
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 11
+    ExtraPermission: ''
+  RAW_IRON:
+    RewardType: money
+    Reward: 5
+    PriceType: itemall
+    Price:
+      - type:RAW_IRON
+      - amount:1
+    MenuItem:
+      - type:RAW_IRON
+      - amount:1
+      - name:&2粗铁
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 12
+    ExtraPermission: ''
+  RAW_COPPER:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:RAW_COPPER
+      - amount:1
+    MenuItem:
+      - type:RAW_COPPER
+      - amount:1
+      - name:&2粗铜
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 13
+    ExtraPermission: ''
+  REDSTONE:
+    RewardType: money
+    Reward: 2
+    PriceType: itemall
+    Price:
+      - type:REDSTONE
+      - amount:1
+    MenuItem:
+      - type:REDSTONE
+      - amount:1
+      - name:&2红石
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 14
+    ExtraPermission: ''
+  COAL:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:COAL
+      - amount:1
+    MenuItem:
+      - type:COAL
+      - amount:1
+      - name:&2煤炭
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 15
+    ExtraPermission: ''
+  LAPIS_LAZULI:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:LAPIS_LAZULI
+      - amount:1
+    MenuItem:
+      - type:LAPIS_LAZULI
+      - amount:1
+      - name:&2青金石
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 16
+    ExtraPermission: ''
+  CHICKEN:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:CHICKEN
+      - amount:1
+    MenuItem:
+      - type:CHICKEN
+      - amount:1
+      - name:&2生鸡肉
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 19
+    ExtraPermission: ''
+  RABBIT:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:RABBIT
+      - amount:1
+    MenuItem:
+      - type:RABBIT
+      - amount:1
+      - name:&2生兔肉
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 20
+    ExtraPermission: ''
+  MUTTON:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:MUTTON
+      - amount:1
+    MenuItem:
+      - type:MUTTON
+      - amount:1
+      - name:&2生羊肉
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 21
+    ExtraPermission: ''
+  BEEF:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:BEEF
+      - amount:1
+    MenuItem:
+      - type:BEEF
+      - amount:1
+      - name:&2生牛肉
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 22
+    ExtraPermission: ''
+  TROPICAL_FISH:
+    RewardType: money
+    Reward: 3
+    PriceType: itemall
+    Price:
+      - type:TROPICAL_FISH
+      - amount:1
+    MenuItem:
+      - type:TROPICAL_FISH
+      - amount:1
+      - name:&2热带鱼
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 23
+    ExtraPermission: ''
+  COD:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:COD
+      - amount:1
+    MenuItem:
+      - type:COD
+      - amount:1
+      - name:&2鳕鱼
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 24
+    ExtraPermission: ''
+  SALMON:
+    RewardType: money
+    Reward: 1
+    PriceType: itemall
+    Price:
+      - type:SALMON
+      - amount:1
+    MenuItem:
+      - type:SALMON
+      - amount:1
+      - name:&2鲑鱼
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 25
+    ExtraPermission: ''
+  LEATHER:
+    RewardType: money
+    Reward: 0.5
+    PriceType: itemall
+    Price:
+      - type:LEATHER
+      - amount:1
+    MenuItem:
+      - type:LEATHER
+      - amount:1
+      - name:&2皮革
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 28
+    ExtraPermission: ''
+  BONE:
+    RewardType: money
+    Reward: 0.5
+    PriceType: itemall
+    Price:
+      - type:BONE
+      - amount:1
+    MenuItem:
+      - type:BONE
+      - amount:1
+      - name:&2骨头
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 29
+    ExtraPermission: ''
+  FEATHER:
+    RewardType: money
+    Reward: 0.5
+    PriceType: itemall
+    Price:
+      - type:FEATHER
+      - amount:1
+    MenuItem:
+      - type:FEATHER
+      - amount:1
+      - name:&2羽毛
+      - lore:&2%reward%
+      - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 30
+    ExtraPermission: ''
+  ROTTEN_FLESH:
+    RewardType: money
+    Reward: 0.2
+    PriceType: itemall
+    Price:
+    - type:ROTTEN_FLESH
+    - amount:1
+    MenuItem:
+    - type:ROTTEN_FLESH
+    - amount:1
+    - name:&2腐肉
+    - lore:&2%reward%
+    - amount:1
+    Message: '&f您以&b%reward%&f的价格&b卖出&f了所有%itemname%&f,当前余额&b%balance%&f.'
+    InventoryLocation: 31
+    ExtraPermission: ''
+  menu:
+    MenuItem:
+    - type:GLASS
+    - amount:1
+    - name:&a主菜单
+    RewardType: shop
+    Reward: menu
+    PriceType: NOTHING
+    ExtraPermission: ''
+    InventoryLocation: 37
+  close:
+    MenuItem:
+    - type:GLASS
+    - amount:1
+    - name:&a主菜单
+    RewardType: shop
+    Reward: menu
+    PriceType: NOTHING
+    ExtraPermission: ''
+    InventoryLocation: 37

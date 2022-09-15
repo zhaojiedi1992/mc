@@ -1,0 +1,132 @@
+ShopName: Menu
+DisplayName: '&a&l&k1&b&l主菜单&a&l&k1'
+signs:
+  text: '[Menu]'
+  NeedPermissionTocreatesign: true
+shop:
+  hub:
+    MenuItem:
+    - type:BEACON
+    - amount:1
+    - name:&a主城
+    RewardType: BUNGEECORDSERVER
+    Reward: hub
+    PriceType: NOTHING
+    ExtraPermission: ''
+    InventoryLocation: 5
+
+  d1:
+    MenuItem:
+    - type:GRASS_BLOCK
+    - amount:1
+    - name:&a普通地皮区
+    - 'lore:&b&l免费白嫖一块地皮'
+    RewardType: BUNGEECORDSERVER
+    Reward: d1
+    PriceType: NOTHING
+    ExtraPermission: ''
+    InventoryLocation: 12
+  z1:
+    MenuItem:
+    - name:&6&l资源世界
+    - 'lore:&b&l暂未开放'
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdkMDFjMDI5ZmZkODQ5YmI1NjE4MDU2MDk4MDRiMDE4MjcxNGZjYjYyOTA2M2I3ODc1MjM0MmFiZTIzMWFlNSJ9fX0=
+    - amount:1
+    RewardType: BUNGEECORDSERVER
+    Reward: z1
+    PriceType: NOTHING
+    ExtraPermission: ''
+    InventoryLocation: 14
+  s1:
+    MenuItem:
+      - type:DIRT
+      - amount:1
+      - name:&a生存1区
+    RewardType: BUNGEECORDSERVER
+    Reward: s1
+    PriceType: NOTHING
+    ExtraPermission: ''
+    InventoryLocation: 21
+  s2:
+    MenuItem:
+      - type:DIRT
+      - amount:2
+      - name:&a生存2区
+      - 'lore:&b&l暂未开放'
+    RewardType: BUNGEECORDSERVER
+    Reward: s2
+    PriceType: NOTHING
+    ExtraPermission: ''
+    InventoryLocation: 23
+
+  account:
+    RewardType: command
+    Reward:
+    - BS-free无奖励标记
+    PriceType: free
+    MenuItem:
+    - name:&e&l账户信息
+    - 'lore:&a游戏币: &6%vault_eco_balance_fixed%'
+    - 'lore:&a点  券: &9%balancepoints%'
+    - id:skull
+    - durability:3
+    - type:PLAYER_HEAD
+    - playerhead:MrSnowDK
+    - amount:1
+    InventoryLocation: 41
+
+  recycle:
+    RewardType: playercommand
+    Reward:
+    - disposal
+    PriceType: free
+    MenuItem:
+    - name:&a&l垃圾桶
+    - 'lore:&a点击打开垃圾桶'
+    - 'lore:&c物品放入后将会被永久销毁'
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRjMjhmZmI5MDYzZTYzMDM3YzdjOWMzYTk5OTc1MzMzMjU0OTQ2ZGRmYTAwMTg5OTYxNTE3NDBhNWM2Njg0MiJ9fX0=
+    - amount:1
+    InventoryLocation: 46
+
+  skin:
+    RewardType: command
+    Reward:
+    - BS-free无奖励标记
+    PriceType: free
+    MenuItem:
+    - name:&e&l更换皮肤
+    - 'lore:&a指令&6/skin [皮肤名]'
+    - 'lore:&c(皮肤名为国际正版ID)'
+    - 'lore:&d点击即可查询'
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzA4MjAxMjI4MzliZWQzMDMxMDFhYTY2N2E1NDFjOWI1MGM3MWFlY2FlYWU1YzMzMzYyNjY0Y2I0NDNkYWNjNyJ9fX0=
+    - amount:1
+    Message: '&7&l[&b&l提示&7] &b皮肤名查询请到 &e&lhttps://zh-cn.namemc.com/'
+    InventoryLocation: 42
+
+  password:
+    RewardType: command
+    Reward:
+    - BS-free无奖励标记
+    PriceType: free
+    MenuItem:
+    - name:&c&l密码安全
+    - 'lore:&a请随时注意自己的密码安全#&a不要随意将密码告诉其他人#&a修改密码指令&6/changepassword <旧密码> <新密码>#&a&l使用&6/email add 邮箱 确认邮箱 &a添加邮箱密保#&c&l请在登陆大厅执行更改密码操作!'
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNkMmY0NGE1MWUzZWRkODViNTZmMzIwYjE2YjE4Y2Q4YmM0ZjEwNWZlMzVlZjE1YzRlM2EyMWZiMjYyIn19fQ==
+    - amount:1
+    InventoryLocation: 40
+
+  sg:
+    RewardType: shop
+    Reward: sg
+    PriceType: free
+    MenuItem:
+    - name:&e&l收购商店
+    - 'lore:&a在这里你可以出售物品换取游戏币#&b点击打开！'
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWU5NmY1NTE5OTgwM2FiYzIxNGRkMzcxOTVlZWY2YjFkZmVlNWZmYzNjOTdhZTBkMWI1MjRkOTQzYzQyZWU5In19fQ==
+    - amount:1
+    InventoryLocation: 54

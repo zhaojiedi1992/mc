@@ -1,0 +1,303 @@
+ShopName: sg
+DisplayName: '&l&n收购菜单'
+signs:
+  text: '[sg]'
+  NeedPermissionToCreateSign: true
+shop:
+  meitan:
+    RewardType: playercommand
+    PriceType: money
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:WHEAT
+    - amount:1
+    Message: '&aChange me @ item-1Message'
+    InventoryLocation: 1
+  item-2:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:BAMBOO
+    - amount:1
+    Message: '&aChange me @ item-2Message'
+    InventoryLocation: 2
+  item-3:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:MELON
+    - amount:1
+    Message: '&aChange me @ item-3Message'
+    InventoryLocation: 3
+  item-4:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:PUMPKIN
+    - amount:1
+    Message: '&aChange me @ item-4Message'
+    InventoryLocation: 4
+  item-5:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:SWEET_BERRIES
+    - amount:1
+    Message: '&aChange me @ item-5Message'
+    InventoryLocation: 5
+  item-6:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:BEETROOT
+    - amount:1
+    Message: '&aChange me @ item-6Message'
+    InventoryLocation: 6
+  item-7:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:POTATO
+    - amount:1
+    Message: '&aChange me @ item-7Message'
+    InventoryLocation: 7
+  item-8:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:CARROT
+    - amount:1
+    Message: '&aChange me @ item-8Message'
+    InventoryLocation: 8
+  item-9:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:CACTUS
+    - amount:1
+    Message: '&aChange me @ item-9Message'
+    InventoryLocation: 9
+  item-10:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:DIAMOND
+    - amount:1
+    Message: '&aChange me @ item-10Message'
+    InventoryLocation: 10
+  item-11:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:RAW_GOLD
+    - amount:1
+    Message: '&aChange me @ item-11Message'
+    InventoryLocation: 11
+  item-12:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:RAW_IRON
+    - amount:1
+    Message: '&aChange me @ item-12Message'
+    InventoryLocation: 12
+  item-13:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:RAW_COPPER
+    - amount:1
+    Message: '&aChange me @ item-13Message'
+    InventoryLocation: 13
+  item-14:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:REDSTONE
+    - amount:64
+    Message: '&aChange me @ item-14Message'
+    InventoryLocation: 14
+  item-15:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:COAL
+    - amount:1
+    Message: '&aChange me @ item-15Message'
+    InventoryLocation: 15
+  item-16:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:LAPIS_LAZULI
+    - amount:1
+    Message: '&aChange me @ item-16Message'
+    InventoryLocation: 16
+  item-19:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:CHICKEN
+    - amount:1
+    Message: '&aChange me @ item-19Message'
+    InventoryLocation: 19
+  item-20:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:RABBIT
+    - amount:1
+    Message: '&aChange me @ item-20Message'
+    InventoryLocation: 20
+  item-21:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:MUTTON
+    - amount:1
+    Message: '&aChange me @ item-21Message'
+    InventoryLocation: 21
+  item-22:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:BEEF
+    - amount:1
+    Message: '&aChange me @ item-22Message'
+    InventoryLocation: 22
+  item-23:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:TROPICAL_FISH
+    - amount:1
+    Message: '&aChange me @ item-23Message'
+    InventoryLocation: 23
+  item-24:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:COD
+    - amount:1
+    Message: '&aChange me @ item-24Message'
+    InventoryLocation: 24
+  item-25:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:SALMON
+    - amount:1
+    Message: '&aChange me @ item-25Message'
+    InventoryLocation: 25
+  item-28:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:LEATHER
+    - amount:1
+    Message: '&aChange me @ item-28Message'
+    InventoryLocation: 28
+  item-29:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:BONE
+    - amount:1
+    Message: '&aChange me @ item-29Message'
+    InventoryLocation: 29
+  item-30:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:FEATHER
+    - amount:1
+    Message: '&aChange me @ item-30Message'
+    InventoryLocation: 30
+  item-31:
+    RewardType: playercommand
+    PriceType: free
+    Reward:
+    - say This is a reward
+    - say This is another reward
+    MenuItem:
+    - type:ROTTEN_FLESH
+    - amount:1
+    Message: '&aChange me @ item-31Message'
+    InventoryLocation: 31
