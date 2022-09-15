@@ -1,4 +1,57 @@
 Groups:
+    级别: 
+       Residence:
+           CanCreate: true
+           MaxResidences: 领地个数
+           MaxAreasPerResidence: 领地个数
+           MaxEastWest: 圈地大小
+           MinEastWest: 2
+           MaxNorthSouth: 圈地大小
+           MinNorthSouth: 2
+           MaxUpDown: 320
+           MinUpDown: 3
+           MinHeight: -64
+           MaxHeight: 320
+           MaxSubzonesInArea: 领地个数
+           SubzoneDepth: 3
+           SubzoneMaxEastWest: 圈地大小
+           SubzoneMinEastWest: 2
+           SubzoneMaxNorthSouth: 圈地大小
+           SubzoneMinNorthSouth: 2
+           SubzoneMaxUpDown: 320
+           SubzoneMinUpDown: 3
+           CanTeleport: true
+           Unstuck: true
+           Kick: False
+           SelectCommandAccess: true
+           ItemListAccess: true
+       Messaging:
+           CanChange: true
+           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence。"
+           DefaultLeave: "你离开了领地%residence。"
+       Lease:
+          MaxDays: 16
+          RenewIncrement: 14
+       Rent:
+           MaxRents: 3
+           MaxRentables: 3
+           MaxRentDays: 31
+       Economy:
+          CanBuy: true
+          CanSell: false
+          IgnoreLimits: false
+          BuyCost: 圈地单价
+          SellCost: 0
+          RenewCost: 圈地单价
+       Flags:
+          Permission:
+          Default:
+              tp: true 
+          CreatorDefault:
+          GroupDefault:
+          World:
+                Global: 
+                WorldNameHere: 
     owner: 
        Residence:
            CanCreate: true
@@ -211,7 +264,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Default: 
+    default: 
        Residence:
            CanCreate: true
            MaxResidences: 1

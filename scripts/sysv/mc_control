@@ -1,12 +1,20 @@
 #!/bin/bash
 # chkconfig: 2345 20 80
 . /etc/init.d/functions
-name=d1
+name=$(echo "$(basename $0)" |sed 's@mc_@@g')
+echo "mc=$name"
+
+host=127.0.0.1
+password=panda142857
+mcrcon_cmd="/mc/mcrcon/mcrcon"
+java_cmd="/usr/bin/java"
+mc_instance_dir="/mc/instances"
+log_file=$mc_instance_dir/$name/nohup.log
 
 get_rcon_port(){
 	local area=$1
 	case $area in 
-		bc)  echo 26577;;
+		bc)  echo 0;;
 		hub) echo 11000;;
 		d1)  echo 21001;;
 		d2)  echo 21002;;
@@ -15,14 +23,27 @@ get_rcon_port(){
 		*)   echo 0;;
 	esac
 }
+get_jvm(){
+	local area=$1
+	case $area in 
+		bc)  echo " -Xms1G -Xmx1G ";;
+		hub)  echo " -Xms1G -Xmx1G ";;
+		d1)  echo " -Xms1G -Xmx1G ";;
+		d2)  echo " -Xms1G -Xmx1G ";;
+		s1)  echo " -Xms2G -Xmx4G ";;
+		s2)  echo " -Xms2G -Xmx4G ";;
+		*)  echo " -Xms1G -Xmx1G ";;
+	esac
+}
 
-base_dir=/mc/instances/$name
-mcrcon_pre="/mc/mcrcon/mcrcon -H 127.0.0.1 -P $(get_rcon_port $name) -p panda142857"
 
+base_dir=${mc_instance_dir}/$name
+mcrcon_pre="${mcrcon_cmd} -H $host -p $password -P $(get_rcon_port $name)"
 mc_exist(){
 	local jar_name=$1
 	ps aux |grep $jar_name |grep -v grep >/dev/null
 }
+
 status(){
 	mc_exist $name.jar
 	if [ $? -eq 0 ]; then
@@ -33,12 +54,22 @@ status(){
 }
 start() {
 	cd $base_dir
-	nohup java -Xms1G -Xmx2G -jar $name.jar --nogui &
+	nohup ${java_cmd} $(get_jvm $name) -jar $name.jar --nogui >>${log_file} 2>>${log_file} &
 }
 
 stop() {
 	cd $base_dir
+
+	mc_exist $name.jar
+	if [ $? -ne 0 ]; then
+		return
+	fi
+	if [ X$name == X"bc" ] ; then 
+		stop_kill
+		return 
+	fi
 	$mcrcon_pre stop
+
 	for i in $(seq 1 10); do 
 		mc_exist $name.jar
 		if [ $? -eq 0 ] ; then 
@@ -47,6 +78,10 @@ stop() {
 			sleep 1
 		fi
 	done
+	stop_kill
+}
+stop_kill(){
+	cd $base_dir 
 	ps aux |grep $name.jar |grep -v grep  |awk '{print $2}' |while read pid ; do
 		kill -9 $pid
 	done
@@ -74,7 +109,7 @@ case "$1" in
 	    status
        ;;
     *)
-       echo "Usage: $0 {start|stop|status|restart}"
+       echo "Usage: $0 {start|stop|status|restart|conn}"
 esac
 
 exit 0 
