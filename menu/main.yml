@@ -7,7 +7,13 @@ Layout:
   - '..`s1`.`s2`....'
   - '`trash`...`skin`.`level`.`help`'
   - '....`stop`....'
-
+Functions:
+  get_level: |-
+    // Lv1=>1
+    function get_level(group) {
+      groups=["Owner","OP","SVIP","VIP",]
+    }
+    get_level()
 Options:
   # 是否启用菜单传参功能 （默认开启）
   Arguments: true

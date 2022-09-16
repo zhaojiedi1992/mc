@@ -1,0 +1,301 @@
+Title: '&d&l [购买] &1&l建筑材料'
+Shape:
+- '--------Z'
+- '123456789'
+- 'abcdefghi'
+- 'jklnmo   '
+- '----/----'
+Buttons:
+  /:
+    display:
+      mats: nether_star
+      name:
+      - '&c返回'
+      Shiny: true
+    actions:
+      all:
+      - 'open: shop-list'
+  Z:
+    display:
+      mats: ORANGE_STAINED_GLASS_PANE
+      name:
+      - '&c&l✖ 关闭菜单 ✖ '
+      Shiny: true
+    actions:
+      all:
+      - 'sound: shopsell_GLASS_BREAK'
+      - Close
+  '-':
+    display:
+      name: '&a '
+      mats: BLUE_STAINED_GLASS_PANE
+  '1':
+    display:
+      mats: COAL_BLOCK
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 15金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 COAL_BLOCK'
+      - 'set-meta: 价格 15'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '2':
+    display:
+      mats: IRON_INGOT
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 15金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 IRON_INGOT'
+      - 'set-meta: 价格 15'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '3':
+    display:
+      mats: GOLD_INGOT
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 20金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 GOLD_INGOT'
+      - 'set-meta: 价格 20'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '4':
+    display:
+      mats: DIAMOND
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 150金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 DIAMOND'
+      - 'set-meta: 价格 150'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '5':
+    display:
+      mats: EMERALD
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 120金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 EMERALD'
+      - 'set-meta: 价格 120'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '6':
+    display:
+      mats: REDSTONE_BLOCK
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 30金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 REDSTONE_BLOCK'
+      - 'set-meta: 价格 30'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '7':
+    display:
+      mats: LAPIS_BLOCK
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 30金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 LAPIS_BLOCK'
+      - 'set-meta: 价格 30'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '8':
+    display:
+      mats: WHEAT
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 5金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 WHEAT'
+      - 'set-meta: 价格 5'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  '9':
+    display:
+      mats: MELON
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 5金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 MELON'
+      - 'set-meta: 价格 5'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'a':
+    display:
+      mats: PUMPKIN
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 5金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 PUMPKIN'
+      - 'set-meta: 价格 5'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'b':
+    display:
+      mats: SUGAR_CANE
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 3金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 SUGAR_CANE'
+      - 'set-meta: 价格 3'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'c':
+    display:
+      mats: CARROT
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 2金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 CARROT'
+      - 'set-meta: 价格 2'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'd':
+    display:
+      mats: BEETROOT
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 2金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 BEETROOT'
+      - 'set-meta: 价格 2'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'e':
+    display:
+      mats: POTATO
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 2金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 POTATO'
+      - 'set-meta: 价格 2'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'f':
+    display:
+      mats: COD
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 5金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 COD'
+      - 'set-meta: 价格 5'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'g':
+    display:
+      mats: SALMON
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 5金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 SALMON'
+      - 'set-meta: 价格 5'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'h':
+    display:
+      mats: TROPICAL_FISH
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 5金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 TROPICAL_FISH'
+      - 'set-meta: 价格 5'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
+  'i':
+    display:
+      mats: ROTTEN_FLESH
+      lore:
+      - ''
+      - '&8 ▪ &d价格: &e 2金币 / 个'
+      - ''
+      - '&f➤ &a&l点击 开始回收'
+      - ''
+    actions:
+      all:
+      - 'set-meta: 物品 ROTTEN_FLESH'
+      - 'set-meta: 价格 2'
+      - 'sound: shopsell_STONE_STEP-1-0'
+      - 'menu: Shop-Sell %.trmenu_meta_物品% %trmenu_meta_价格% 1 shopsell'
