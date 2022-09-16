@@ -1,0 +1,104 @@
+Title:
+  - '熊猫乐园 系统收购 模版'
+
+Layout:
+  - '########<'
+  - '|       |'
+  - '| - X + |'
+  - '|       |'
+  - '####*####'
+
+# {0}         {1}         {2}           {3}
+# {fromMenu} {itemName} {singlePrice} {amount}
+Events:
+  Open:
+    - 'reset'
+  Close:
+    - 'trplugins.menu: {0}'
+    - 'del-args'
+
+Icons:
+
+
+
+  '<':
+    display:
+      material: gray stained glass pane
+      name: '&6Return'
+    actions:
+      all: 'trplugins.menu: {0} &&& sound: UI_BUTTON_CLICK-1-2'
+
+  '-':
+    display:
+      material: red stained glass pane
+      name: '&c数量 -'
+      lore:
+        - '&8当前数量: {3}'
+        - ''
+        - '&8▪ &7左键 &f-1'
+        - '&8▪ &7Shift+左键 &f-16'
+        - ''
+    actions:
+      left: 'set-args: {0} {1} {2} `${js: Math.max(funInt(3) - 1, 1).toFixed(0)}`'
+      shift_left: 'set-args: {0} {1} {2} `${js: Math.max(funInt(3) - 16, 1).toFixed(0)}`'
+      all: 'update: +;-;X &&& sound: UI_BUTTON_CLICK-1-2'
+
+  '+':
+    display:
+      material: lime stained glass pane
+      name: '&a数量 +'
+      lore:
+        - '&8当前数量: {3}'
+        - ''
+        - '&8▪ &7左键 &f+1'
+        - '&8▪ &7Shift+左键 &f+16'
+        - ''
+    actions:
+      left: 'set-args: {0} {1} {2} `${js: Math.min(funInt(3) + 1, 64).toFixed(0)}`'
+      shift_left: 'set-args: {0} {1} {2} `${js: Math.min(funInt(3) + 16, 64).toFixed(0)}`'
+      all: 'update: +;-;X &&& sound: UI_BUTTON_CLICK-1-2'
+
+  '*':
+    display:
+      material: sunflower
+      name: '&e&l自定义'
+      lore:
+        - ''
+        - '&7余额: &e$%vault_eco_balance%'
+        - ''
+        - '&a➥ &2点击输入数量'
+    actions:
+      all:
+        - catcher:
+            amount:
+              type: CHAT
+              start: 'actionbar: &b&l输入你要卖出的数量'
+              cancel: 'tell: &8取消了输入'
+              end:
+                - 'set-args: {0} {1} {2} `${js: Math.min(Math.max(varInt("{meta:input}"), 1), 64).toFixed(0)}`'
+                - 'trplugins.menu: Shop-Handler-Sell'
+
+  'X':
+    display:
+      material: '{1}'
+      amount: '${js: funInt(3)}'
+      lore:
+        - ''
+        - '&7价格: &6${2}'
+        - '&7数量: &a{3}'
+        - ''
+        - '&7总价格: &e${js: funInt(3) * funDouble(2)}'
+        - ''
+        - '&b➥ &3点击销售 {condition=js: utils.hasItem(player, vars("mat:{1},amt:{3}"))}'
+        - '&c➥ &8你没有足够的{1} {condition=js: ! utils.hasItem(player, vars("mat:{1},amt:{3}"))}'
+    actions:
+      all:
+        - condition: 'js: utils.hasItem(player, vars("mat:{1},amt:{3}"))'
+          actions:
+            - 'give-money: ${js: funInt(3) * funDouble(2)}'
+            - 'take-item: material:{1},amt:{3}'
+            - 'title: &3&lSold `&a&lMoney has been delivered`'
+            - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+            - 'force-close &&& del-args'
+          deny:
+            - 'sound: BLOCK_ANVIL_DESTROY-1-2'

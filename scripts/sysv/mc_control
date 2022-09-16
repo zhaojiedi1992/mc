@@ -38,7 +38,7 @@ get_jvm(){
 
 
 base_dir=${mc_instance_dir}/$name
-mcrcon_pre="${mcrcon_cmd} -H $host -p $password -P $(get_rcon_port $name)"
+mcrcon_pre="${mcrcon_cmd} -H $host -p $password -P $(get_rcon_port $name) -t "
 mc_exist(){
 	local jar_name=$1
 	ps aux |grep $jar_name |grep -v grep >/dev/null
@@ -68,7 +68,7 @@ stop() {
 		stop_kill
 		return 
 	fi
-	$mcrcon_pre stop
+	$mcrcon_pre "-w 3 '服务器进行重启操作' save-all stop"
 
 	for i in $(seq 1 10); do 
 		mc_exist $name.jar
@@ -88,12 +88,14 @@ stop_kill(){
 }
 conn() {
 	cd $base_dir
-	$mcrcon_pre  $1
+	cmd="$1"
+	$mcrcon_pre  "$cmd"
 }
 
 case "$1" in 
     conn)
-       conn
+       cmd="$2"
+       conn "$cmd"
        ;;
     start)
        start

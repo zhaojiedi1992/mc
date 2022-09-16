@@ -1,0 +1,14 @@
+lp group owner permission set residence.group.owner
+lp group op permission set residence.group.op
+lp group svip permission set residence.group.svip
+lp group vip permission set residence.group.vip
+lp group lv1 permission set residence.group.lv1
+lp group lv2 permission set residence.group.lv2
+lp group lv3 permission set residence.group.lv3
+lp group lv4 permission set residence.group.lv4
+lp group lv5 permission set residence.group.lv5
+lp group lv6 permission set residence.group.lv6
+lp group lv7 permission set residence.group.lv7
+lp group lv8 permission set residence.group.lv8
+lp group lv9 permission set residence.group.lv9
+lp group lv10 permission set residence.group.lv10

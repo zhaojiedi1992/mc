@@ -1,5 +1,5 @@
 Groups:
-    owner: 
+    Owner: 
        Residence:
            CanCreate: true
            MaxResidences: 1000
@@ -52,7 +52,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    op: 
+    OP: 
        Residence:
            CanCreate: true
            MaxResidences: 1000
@@ -105,7 +105,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    svip: 
+    SVIP: 
        Residence:
            CanCreate: true
            MaxResidences: 20
@@ -158,7 +158,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    vip: 
+    VIP: 
        Residence:
            CanCreate: true
            MaxResidences: 10
@@ -211,7 +211,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Default: 
+    Lv.0: 
        Residence:
            CanCreate: true
            MaxResidences: 1
@@ -264,7 +264,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv1: 
+    Lv.1: 
        Residence:
            CanCreate: true
            MaxResidences: 2
@@ -317,7 +317,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv2: 
+    Lv.2: 
        Residence:
            CanCreate: true
            MaxResidences: 4
@@ -370,7 +370,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv3: 
+    Lv.3: 
        Residence:
            CanCreate: true
            MaxResidences: 6
@@ -423,7 +423,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv4: 
+    Lv.4: 
        Residence:
            CanCreate: true
            MaxResidences: 8
@@ -476,7 +476,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv5: 
+    Lv.5: 
        Residence:
            CanCreate: true
            MaxResidences: 10
@@ -529,7 +529,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv6: 
+    Lv.6: 
        Residence:
            CanCreate: true
            MaxResidences: 12
@@ -582,7 +582,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv7: 
+    Lv.7: 
        Residence:
            CanCreate: true
            MaxResidences: 14
@@ -635,7 +635,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv8: 
+    Lv.8: 
        Residence:
            CanCreate: true
            MaxResidences: 16
@@ -688,7 +688,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv9: 
+    Lv.9: 
        Residence:
            CanCreate: true
            MaxResidences: 18
@@ -741,7 +741,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    lv10: 
+    Lv.10: 
        Residence:
            CanCreate: true
            MaxResidences: 20

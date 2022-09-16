@@ -1,0 +1,341 @@
+Title: '&6&l熊猫乐园 &d&l主菜单'
+Title-Update: 40
+
+Layout:
+  - '....`hub`....'
+  - '...`d1`.`d2`...'
+  - '..`s1`.`s2`....'
+  - '`trash`.`sell`.`skin`.`level`.`help`'
+  - '....`stop`....'
+
+Options:
+  # 是否启用菜单传参功能 （默认开启）
+  Arguments: true
+  # 默认填充参数
+  Default-Arguments: []
+  # 默认布局页码
+  Default-Layout: 0
+  # 自由槽位
+  Free-Slots:
+    - '71-73'
+  # 是否隐藏玩家容器
+  Hide-Player-Inventory: true
+  # 防频繁点击的间隔
+  Min-Click-Delay: 200
+  # 强制需要依赖的 PlaceholderAPI 拓展变量
+  Depend-Expansions: ['server', 'player','vault','progress']
+
+
+Bindings:
+  Commands:
+    - 'cmd'
+    - 'menu'
+  Items:
+    - 'material:clock,Name:服务器菜单'
+Events:
+  Open:
+    - 'sound: BLOCK_CHEST_OPEN-1-2'
+  Close:
+    - 'sound: BLOCK_CHEST_CLOSE-1-2'
+
+Icons:
+  'hub':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUyNzIzYWEwNjM3ZWE1MjA0NDQ3YmU1MzYxNTFmNTI5ZmU0OTA2ODI2ZDhjMDY2YzRkY2M1MDA3OWE2NDQ2NSJ9fX0='
+      name: 'hub'
+      lore: 
+      - '小名: 主城'
+      - '大名: hub'
+      - '说明: 我来腐竹家看看'
+      - '指令: /server hub'
+    actions:
+      all:
+      - 'server: hub'
+      - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+  'd1':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc1YzUxN2IwMDgxOTFmMjc0NmJjZDQ4NzZhODlkMjJmNWZjYmZlNDQzMDFhNDk2YTM0MGVmOGQ0ZjIyNzRlYyJ9fX0='
+      name: 'd1'
+      lore: 
+      - '小名: 普通地皮区'
+      - '大名: d1'
+      - '说明: 嘿嘿嘿,我白嫖'
+      - '指令: /server d1'
+    actions:
+      all:
+      - 'server: d1'
+      - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+
+  'd2':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFjNGE3MThhOTEzZjk1ZWRhZDEwNjgwMGEzNDE0ZmI4Mjc3Njk5MzA4YzMyZWIzOGIxM2RhYTQxNmQxZmUyMyJ9fX0='
+      name: 'd2'
+      lore: 
+      - '小名: 巨型地皮区'
+      - '大名: d2'
+      - '说明: 嘿嘿嘿,我要大House'
+      - '指令: /server d2'
+    actions:
+      all:
+      - 'server: d2'
+      - 'sound: ENTITY_ITEM_BREAK-1-0'
+
+  's1':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWZlMjRjNmY1MmRkYzA4MzU5Zjc5MjMwMWVjYTk2YWVjZjY2OTc5ZGM4OTljNDMyNDJkMjU4N2ViY2I3MGU2In19fQ=='
+      name: 's1'
+      lore: 
+      - '小名: 生存一区'
+      - '大名: s1'
+      - '说明: 圈地圈地'
+      - '指令: /server s1'
+    actions:
+      all:
+      - 'server: s1'
+      - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+
+  's2':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RhZWEzZTEzYTUxM2RhMTA1MWVhNTlkMTdlZGZiMDNlOGQ4Mzg4ZWRlODg4ODg0NzZkZmI2OTNmMmM4Mzk4In19fQ=='
+      name: 's2'
+      lore: 
+      - '小名: 生存二区'
+      - '大名: s2'
+      - '说明: 圈地圈地'
+      - '指令: /server s2'
+    actions:
+      all:
+      #- 'server: s2'
+      - 'tell: &4&l尊敬的%player%您好,您当前所选功能还未开放!!!'
+      - 'sound: ENTITY_ITEM_BREAK-1-0'
+      - 'force-close'
+  'skin':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTcxMzE3NDJiZmQ3YTdmYTIxMmMwNDU5YjEyZWNkNDA1ZTAwMmM3YzkyZWFkYmI5MmFkODM2MGY3MDM0YWZiNyJ9fX0='
+      name: '&b&l&更换皮肤'
+      lore: 
+      - '&a指令&6/skin [皮肤名]'
+      - '&c(皮肤名为国际正版ID)'
+      - '&b左键 &a➥ &c即可查询'
+    actions:
+      all:
+      - 'force-close'
+      - 'tell: &7&l[&b&l提示&7] &b皮肤名查询请到 &e&lhttps://zh-cn.namemc.com/' 
+  'help':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMxNmE4Yjk2Y2I5YWVlYTUxNDBkZDkzNmM2ZWJiOTY0ZWZjYmZkNzFhZTIxN2Q5ZjcwODg4ZWZiMTRlN2MwIn19fQ=='
+      name: '&b&l查看帮助'
+      lore: 
+      - '&b左键 &a➥ &c查看帮助指令'
+    actions:
+      all:
+      - 'force-open: help'
+  'sell':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWU5NmY1NTE5OTgwM2FiYzIxNGRkMzcxOTVlZWY2YjFkZmVlNWZmYzNjOTdhZTBkMWI1MjRkOTQzYzQyZWU5In19fQ=='
+      name: '&b&l系统收购'
+      lore: 
+      - '&b左键 &a➥ &c进入系统收购'
+    actions:
+      all:
+      - 'force-open: sell'
+  'stop':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNiYTAyNGMwNzRiNWQ5YWRmNTJlY2VjZGVkNmI0YTlkMTRmMWEyZjQxMzg2MzVkYjc5YTk1NmZiYWIxNDM1MCJ9fX0='
+      name: '&b&l关闭菜单'
+      lore: 
+      - '&b左键 &a➥ &c关闭菜单'
+    actions:
+      all:
+      - 'close'
+  'trash':
+    properties:
+      cn_name: '垃圾桶'
+      en_name: 'trash'
+      lore1: '&4丢进去就彻底清理了'
+      lore2: ''
+    display:
+      material: 'head:94c28ffb9063e63037c7c9c3a99975333254946ddfa0018996151740a5c66842'
+      name:  '{node: Icons.@iconid@.properties.cn_name}'
+      lore: 
+      - '{node: Icons.@iconid@.properties.lore1}'
+      - '{node: Icons.@iconid@.properties.lore2}'
+    actions:
+      all:
+      - 'tell: &4&l尊敬的%player_name%您好,您当前所选功能还未开放!!!'
+      - 'sound: ENTITY_ITEM_BREAK-1-0'
+  'level':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY3Njk1YzBmNTkzNmE0NWM4M2FhM2Q3ZDY5OGViYWQ3MWNlMzYzZDczMTVhMmZkYmZkZTJkMjFhZjllMTgzOCJ9fX0='
+      name:  '点击升级'
+      lore:
+        - "当前你的余额为: %vault_eco_balance_fixed%"
+        - '升级到Lv.1  需要 %1024$%  {condition=check papi *%vault_group% == *Lv.0}'
+        - '升级到Lv.2  需要 %2048$%  {condition=check papi *%vault_group% == *Lv.1}'
+        - '升级到Lv.3  需要 %4096$%  {condition=check papi *%vault_group% == *Lv.2}'
+        - '升级到Lv.4  需要 %8192$%  {condition=check papi *%vault_group% == *Lv.3}'
+        - '升级到Lv.5  需要 %16384$%  {condition=check papi *%vault_group% == *Lv.4}'
+        - '升级到Lv.6  需要 %32768$%  {condition=check papi *%vault_group% == *Lv.5}'
+        - '升级到Lv.7  需要 %65536$%  {condition=check papi *%vault_group% == *Lv.6}'
+        - '升级到Lv.8  需要 %131072$%  {condition=check papi *%vault_group% == *Lv.7}'
+        - '升级到Lv.9  需要 %262144$%  {condition=check papi *%vault_group% == *Lv.8}'
+        - '升级到Lv.10 需要 %524288$% {condition=check papi *%vault_group% == *Lv.9}'
+        - 'Lv.10无法升级{condition=check papi *%vault_group% == *Lv.10}'
+        - 'VIP无法升级  {condition=check papi *%vault_group% == *VIP}'
+        - 'SVIP无法升级 {condition=check papi *%vault_group% == *SVIP}'
+        - 'OP无法升级 {condition=check papi *%vault_group% == *OP}'
+        - 'Owner无法升级 {condition=check papi *%vault_group% == *Owner}'
+    actions:
+      left:
+      - condition: 'check papi *%vault_group% == *Lv.10 '
+        actions:
+          - 'tell: 你已经升级到了最高级'
+          - 'return'
+      - condition: 'check papi *%vault_group% == *VIP '
+        actions:
+          - 'tell: 你VIP无法升级'
+          - 'return'
+      - condition: 'check papi *%vault_group% == *SVIP '
+        actions:
+          - 'tell: 你SVIP无法升级'
+          - 'return'
+      - condition: 'check papi *%vault_group% == *Owner '
+        actions:
+          - 'tell: 你Owner无法升级'
+          - 'return'
+
+      - condition: 'check papi *%vault_group% == *Lv.10'
+        actions:
+          - 'tell: 你Owner无法升级'
+          - 'return'
+      - condition: 'check papi *%vault_group% == *Lv.9'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *524288'
+            actions:
+              - 'close'
+              - 'take-money: 524288'
+              - 'console: lp user %player_name% parent add lv10'
+              - 'console: lp user %player_name% parent remove lv9'
+              - 'tell: 你已经升级到Lv.10'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要524288。'
+      - condition: 'check papi *%vault_group% == *Lv.8'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *262144'
+            actions:        
+              - 'close'
+              - 'take-money: 262144'
+              - 'console: lp user %player_name% parent add lv9'
+              - 'console: lp user %player_name% parent remove lv8'
+              - 'tell: 你已经升级到Lv.9'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要262144。'        
+      - condition: 'check papi *%vault_group% == *Lv.7'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *131072'
+            actions:              
+              - 'close'
+              - 'take-money: 131072'
+              - 'console: lp user %player_name% parent add lv8'
+              - 'console: lp user %player_name% parent remove lv7'
+              - 'tell: 你已经升级到Lv.8'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要131072。'         
+      - condition: 'check papi *%vault_group% == *Lv.6'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *65536'
+            actions:     
+              - 'close'
+              - 'take-money: 65536'
+              - 'console: lp user %player_name% parent add lv7'
+              - 'console: lp user %player_name% parent remove lv6'
+              - 'tell: 你已经升级到Lv.7'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要65536。'  
+      - condition: 'check papi *%vault_group% == *Lv.5'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *32768'
+            actions:     
+              - 'close'
+              - 'take-money: 32768'
+              - 'console: lp user %player_name% parent add lv6'
+              - 'console: lp user %player_name% parent remove lv5'
+              - 'tell: 你已经升级到Lv.6'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要32768。'  
+      - condition: 'check papi *%vault_group% == *Lv.4'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *16384'
+            actions:   
+              - 'close'
+              - 'take-money: 16384'
+              - 'console: lp user %player_name% parent add lv5'
+              - 'console: lp user %player_name% parent remove lv4'
+              - 'tell: 你已经升级到Lv.5'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要16384。'  
+      - condition: 'check papi *%vault_group% == *Lv.3'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *8192'
+            actions:   
+              - 'close'
+              - 'take-money: 8192'
+              - 'console: lp user %player_name% parent add lv4'
+              - 'console: lp user %player_name% parent remove lv3'
+              - 'tell: 你已经升级到Lv.4'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要8192。'  
+      - condition: 'check papi *%vault_group% == *Lv.2'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *4096'
+            actions:   
+              - 'close'
+              - 'take-money: 4096'
+              - 'console: lp user %player_name% parent add lv3'
+              - 'console: lp user %player_name% parent remove lv2'
+              - 'tell: 你已经升级到Lv.3'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要4096。'  
+      - condition: 'check papi *%vault_group% == *Lv.1'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *2048'
+            actions:   
+              - 'close'
+              - 'take-money: 2048'
+              - 'console: lp user %player_name% parent add lv2'
+              - 'console: lp user %player_name% parent remove lv1'
+              - 'tell: 你已经升级到Lv.2'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要2048。'  
+      - condition: 'check papi *%vault_group% == *Lv.0'
+        actions:
+          - condition: 'check papi *%vault_eco_balance_fixed% > *1024'
+            actions:   
+              - 'close'
+              - 'take-money: 1024'
+              - 'console: lp user %player_name% parent add lv1'
+              - 'console: lp user %player_name% parent remove default'
+              - 'tell: 你已经升级到Lv.1'
+              - 'return'
+            deny: 
+              - 'close'
+              - 'tell: 当前你的余额为%vault_eco_balance_fixed%，升级需要1024。'  
+

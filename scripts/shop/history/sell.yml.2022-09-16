@@ -72,6 +72,28 @@ Icons:
     actions:
       all:
       - 'page: %trmenu_menu_next%'
-#######################################################################
-#######################################################################
-#######################################################################
+
+  'COAL_BLOCK':
+    display:
+      update: 20
+      material: COAL_BLOCK
+      lore:
+      - '&b单价: &e {node: Icons.@iconid@.properties.price}'
+      - "&b左键 &a➥ &c卖1组&e${js: 15  *  64}"
+      - "&b右键 &a➥ &c卖1个&e${js: 15  *  1}"
+      - "&b中键 &a➥ &c自定义"
+      - "&bShift+左键 &a➥ &c卖10组&e${js: 15  *  640}"
+      - ''
+    actions:
+      left:
+        - condition: 'js: utils.hasItem(player, vars("mat:coal_block,amt:64"))'
+          actions:
+          - 'take-item: material:COAL_BLOCK,amount:64'
+          - 'give-money:  ${js: 64 * 15}'
+          - 'tell: 您以$15的单价卖出了64个COAL_BLOCK,收获${js: 64 * 15},当前余额%vault_eco_balance_fixed% 。'
+          deny:
+          - 'tell: &c您没有足够的64个COAL_BLOCK'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell COAL_BLOCK 15 20'
+      right:
