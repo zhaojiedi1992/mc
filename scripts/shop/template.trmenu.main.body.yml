@@ -1,3 +1,4 @@
+'level':  
    display:
       material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY3Njk1YzBmNTkzNmE0NWM4M2FhM2Q3ZDY5OGViYWQ3MWNlMzYzZDczMTVhMmZkYmZkZTJkMjFhZjllMTgzOCJ9fX0='
       name:  '点击升级'
@@ -8,16 +9,16 @@
         - "无法升级: {condition='js: !can_up_%vault_group%' }"
     actions:
       left:
-      - condition: 'js: !can_up(%vault_group%)'
+      - condition: 'js: !can_up_%vault_group%'
         actions:
-          - 'tell: 你已经升级到了最高级'
-          - 'return'
-      - condition: 'check papi *%vault_group% == *Lv.0'
+          - 'tell: &c你已经升级到了最高级啦'
+          - 'close'
+      - condition: 'js: !can_up_%vault_group%'
         actions:
-          - condition: 'check papi *%vault_eco_balance_fixed% > *1024'
+          - condition: 'js: money_can_up_%vault_group%_%vault_eco_balance_fixed%'
             actions:   
               - 'close'
-              - 'take-money: 1024'
+              - 'take-money: ${js: get_up_money_%vault_group%}'
               - 'console: lp user %player_name% parent add lv1'
               - 'console: lp user %player_name% parent remove default'
               - 'tell: 你已经升级到Lv.1'
