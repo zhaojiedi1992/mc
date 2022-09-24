@@ -5,7 +5,7 @@ name=$(echo "$(basename $0)" |sed 's@mc_@@g')
 echo "mc=$name"
 
 host=127.0.0.1
-password=panda142857
+rcon_code=panda142857
 mcrcon_cmd="/mc/mcrcon/mcrcon"
 java_cmd="/usr/bin/java"
 mc_instance_dir="/mc/instances"
@@ -39,7 +39,7 @@ get_jvm(){
 
 
 base_dir=${mc_instance_dir}/$name
-mcrcon_pre="${mcrcon_cmd} -H $host -p $password -P $(get_rcon_port $name)  "
+mcrcon_pre="${mcrcon_cmd} -H $host -p ${rcon_code} -P $(get_rcon_port $name)  "
 mc_exist(){
 	local jar_name=$1
 	ps aux |grep $jar_name |grep -v grep >/dev/null
