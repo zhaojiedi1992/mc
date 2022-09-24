@@ -1,7 +1,7 @@
 #!/bin/bash
 file=groups.yml
-template_file="template.res.groups.yml.template"
-head_file="template.res.head.yml.template"
+template_file="template.res.groups.yml"
+head_file="template.res.head.yml"
 cp $head_file $file
 cat group_list.txt |grep -v "个数" |awk '{print $1,$6,$7,$8,$3}'|while read level max size cost cname ; do 
 	level=$(echo $level |sed 's@default@Default@g')

@@ -27,9 +27,13 @@
           - 'tell: 您以$<price>的单价卖出了<right_cnt>个<cname>,收获${js: <right_cnt> * <price>},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有<right_cnt>个<cname>'
-      middle:
-        actions:
-        - 'open: Shop-Handler-Sell sell <name> <price> 1'
+      MIDDLE:
+        - condition: 'js: utils.hasItem(player, vars("mat:<name>,amt:1"))'
+          actions:
+          - 'tell: 打开自定义菜单'
+          - 'menu: Shop-Handler-Sell sell <name> <price> 1'
+          deny:
+          - 'tell: &c您没有1个<cname>'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:<name>,amt:<sleft_cnt>"))'
           actions:
@@ -39,3 +43,4 @@
           deny:
           - 'tell: &c您没有<sleft_cnt>个<cname>' 
 #######################################################################
+

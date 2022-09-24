@@ -30,6 +30,7 @@ get_jvm(){
 		hub)  echo " -Xms1G -Xmx1G ";;
 		d1)  echo " -Xms1G -Xmx1G ";;
 		d2)  echo " -Xms1G -Xmx1G ";;
+		#s1)  echo " -Xms2G -Xmx8G ";;
 		s1)  echo " -Xms2G -Xmx4G ";;
 		s2)  echo " -Xms2G -Xmx4G ";;
 		*)  echo " -Xms1G -Xmx1G ";;
@@ -38,7 +39,7 @@ get_jvm(){
 
 
 base_dir=${mc_instance_dir}/$name
-mcrcon_pre="${mcrcon_cmd} -H $host -p $password -P $(get_rcon_port $name) -t "
+mcrcon_pre="${mcrcon_cmd} -H $host -p $password -P $(get_rcon_port $name)  "
 mc_exist(){
 	local jar_name=$1
 	ps aux |grep $jar_name |grep -v grep >/dev/null
@@ -68,11 +69,15 @@ stop() {
 		stop_kill
 		return 
 	fi
-	$mcrcon_pre "-w 3 '服务器进行重启操作' save-all stop"
-
+	conn "服务器准备重启5s..." 
+	sleep 2
+	conn "save-all"
+	sleep 3
+	conn "stop"
+	sleep 5
 	for i in $(seq 1 10); do 
 		mc_exist $name.jar
-		if [ $? -eq 0 ] ; then 
+		if [ $? -ne 0 ] ; then 
 			return 
 		else
 			sleep 1

@@ -23,7 +23,7 @@ Options:
   # 防频繁点击的间隔
   Min-Click-Delay: 200
   # 强制需要依赖的 PlaceholderAPI 拓展变量
-  Depend-Expansions: ['server', 'player','vault','progress']
+  Depend-Expansions: ['server', 'player','vault']
 
 
 Bindings:
@@ -104,13 +104,9 @@ Icons:
           - 'tell: 您以$1.5的单价卖出了1个煤炭,收获${js: 1 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个煤炭'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:WHEAT,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell WHEAT 1.5 1'
-          deny:
-          - 'tell: &c您没有1个煤炭'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell WHEAT 1.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:WHEAT,amt:640"))'
           actions:
@@ -120,7 +116,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个煤炭' 
 #######################################################################
-
 #######################################################################
   'BAMBOO':
     display:
@@ -150,13 +145,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个竹子,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个竹子'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:BAMBOO,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell BAMBOO 1 1'
-          deny:
-          - 'tell: &c您没有1个竹子'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell BAMBOO 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:BAMBOO,amt:640"))'
           actions:
@@ -166,7 +157,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个竹子' 
 #######################################################################
-
 #######################################################################
   'MELON':
     display:
@@ -196,13 +186,9 @@ Icons:
           - 'tell: 您以$3的单价卖出了1个西瓜,收获${js: 1 * 3},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个西瓜'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:MELON,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell MELON 3 1'
-          deny:
-          - 'tell: &c您没有1个西瓜'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell MELON 3 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:MELON,amt:640"))'
           actions:
@@ -212,7 +198,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个西瓜' 
 #######################################################################
-
 #######################################################################
   'PUMPKIN':
     display:
@@ -242,13 +227,9 @@ Icons:
           - 'tell: 您以$3的单价卖出了1个南瓜,收获${js: 1 * 3},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个南瓜'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:PUMPKIN,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell PUMPKIN 3 1'
-          deny:
-          - 'tell: &c您没有1个南瓜'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell PUMPKIN 3 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:PUMPKIN,amt:640"))'
           actions:
@@ -258,7 +239,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个南瓜' 
 #######################################################################
-
 #######################################################################
   'SWEET_BERRIES':
     display:
@@ -288,13 +268,9 @@ Icons:
           - 'tell: 您以$1.5的单价卖出了1个甜浆果,收获${js: 1 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个甜浆果'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:SWEET_BERRIES,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell SWEET_BERRIES 1.5 1'
-          deny:
-          - 'tell: &c您没有1个甜浆果'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell SWEET_BERRIES 1.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:SWEET_BERRIES,amt:640"))'
           actions:
@@ -304,7 +280,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个甜浆果' 
 #######################################################################
-
 #######################################################################
   'BEETROOT':
     display:
@@ -334,13 +309,9 @@ Icons:
           - 'tell: 您以$1.5的单价卖出了1个甜菜,收获${js: 1 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个甜菜'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:BEETROOT,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell BEETROOT 1.5 1'
-          deny:
-          - 'tell: &c您没有1个甜菜'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell BEETROOT 1.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:BEETROOT,amt:640"))'
           actions:
@@ -350,7 +321,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个甜菜' 
 #######################################################################
-
 #######################################################################
   'POTATO':
     display:
@@ -380,13 +350,9 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个马铃薯,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个马铃薯'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:POTATO,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell POTATO 0.5 1'
-          deny:
-          - 'tell: &c您没有1个马铃薯'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell POTATO 0.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:POTATO,amt:640"))'
           actions:
@@ -396,7 +362,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个马铃薯' 
 #######################################################################
-
 #######################################################################
   'CARROT':
     display:
@@ -426,13 +391,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个胡萝卜,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个胡萝卜'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:CARROT,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell CARROT 1 1'
-          deny:
-          - 'tell: &c您没有1个胡萝卜'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell CARROT 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:CARROT,amt:640"))'
           actions:
@@ -442,7 +403,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个胡萝卜' 
 #######################################################################
-
 #######################################################################
   'CACTUS':
     display:
@@ -472,13 +432,9 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个仙人掌,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个仙人掌'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:CACTUS,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell CACTUS 0.5 1'
-          deny:
-          - 'tell: &c您没有1个仙人掌'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell CACTUS 0.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:CACTUS,amt:640"))'
           actions:
@@ -488,7 +444,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个仙人掌' 
 #######################################################################
-
 #######################################################################
   'DIAMOND':
     display:
@@ -518,13 +473,9 @@ Icons:
           - 'tell: 您以$30的单价卖出了1个钻石,收获${js: 1 * 30},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个钻石'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:DIAMOND,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell DIAMOND 30 1'
-          deny:
-          - 'tell: &c您没有1个钻石'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell DIAMOND 30 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:DIAMOND,amt:640"))'
           actions:
@@ -534,7 +485,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个钻石' 
 #######################################################################
-
 #######################################################################
   'RAW_GOLD':
     display:
@@ -564,13 +514,9 @@ Icons:
           - 'tell: 您以$8的单价卖出了1个粗金,收获${js: 1 * 8},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个粗金'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:RAW_GOLD,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell RAW_GOLD 8 1'
-          deny:
-          - 'tell: &c您没有1个粗金'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell RAW_GOLD 8 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:RAW_GOLD,amt:640"))'
           actions:
@@ -580,7 +526,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个粗金' 
 #######################################################################
-
 #######################################################################
   'RAW_IRON':
     display:
@@ -610,13 +555,9 @@ Icons:
           - 'tell: 您以$5的单价卖出了1个粗铁,收获${js: 1 * 5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个粗铁'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:RAW_IRON,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell RAW_IRON 5 1'
-          deny:
-          - 'tell: &c您没有1个粗铁'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell RAW_IRON 5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:RAW_IRON,amt:640"))'
           actions:
@@ -626,7 +567,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个粗铁' 
 #######################################################################
-
 #######################################################################
   'RAW_COPPER':
     display:
@@ -656,13 +596,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个粗铜,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个粗铜'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:RAW_COPPER,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell RAW_COPPER 1 1'
-          deny:
-          - 'tell: &c您没有1个粗铜'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell RAW_COPPER 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:RAW_COPPER,amt:640"))'
           actions:
@@ -672,7 +608,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个粗铜' 
 #######################################################################
-
 #######################################################################
   'REDSTONE':
     display:
@@ -702,13 +637,9 @@ Icons:
           - 'tell: 您以$2的单价卖出了1个红石,收获${js: 1 * 2},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个红石'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:REDSTONE,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell REDSTONE 2 1'
-          deny:
-          - 'tell: &c您没有1个红石'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell REDSTONE 2 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:REDSTONE,amt:640"))'
           actions:
@@ -718,7 +649,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个红石' 
 #######################################################################
-
 #######################################################################
   'COAL':
     display:
@@ -748,13 +678,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个煤炭,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个煤炭'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:COAL,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell COAL 1 1'
-          deny:
-          - 'tell: &c您没有1个煤炭'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell COAL 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:COAL,amt:640"))'
           actions:
@@ -764,7 +690,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个煤炭' 
 #######################################################################
-
 #######################################################################
   'LAPIS_LAZULI':
     display:
@@ -794,13 +719,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个青金石,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个青金石'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:LAPIS_LAZULI,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell LAPIS_LAZULI 1 1'
-          deny:
-          - 'tell: &c您没有1个青金石'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell LAPIS_LAZULI 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:LAPIS_LAZULI,amt:640"))'
           actions:
@@ -810,7 +731,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个青金石' 
 #######################################################################
-
 #######################################################################
   'CHICKEN':
     display:
@@ -840,13 +760,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生鸡肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生鸡肉'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:CHICKEN,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell CHICKEN 1 1'
-          deny:
-          - 'tell: &c您没有1个生鸡肉'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell CHICKEN 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:CHICKEN,amt:640"))'
           actions:
@@ -856,7 +772,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个生鸡肉' 
 #######################################################################
-
 #######################################################################
   'RABBIT':
     display:
@@ -886,13 +801,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生兔肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生兔肉'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:RABBIT,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell RABBIT 1 1'
-          deny:
-          - 'tell: &c您没有1个生兔肉'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell RABBIT 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:RABBIT,amt:640"))'
           actions:
@@ -902,7 +813,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个生兔肉' 
 #######################################################################
-
 #######################################################################
   'MUTTON':
     display:
@@ -932,13 +842,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生羊肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生羊肉'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:MUTTON,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell MUTTON 1 1'
-          deny:
-          - 'tell: &c您没有1个生羊肉'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell MUTTON 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:MUTTON,amt:640"))'
           actions:
@@ -948,7 +854,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个生羊肉' 
 #######################################################################
-
 #######################################################################
   'BEEF':
     display:
@@ -978,13 +883,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生牛肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生牛肉'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:BEEF,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell BEEF 1 1'
-          deny:
-          - 'tell: &c您没有1个生牛肉'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell BEEF 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:BEEF,amt:640"))'
           actions:
@@ -994,7 +895,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个生牛肉' 
 #######################################################################
-
 #######################################################################
   'TROPICAL_FISH':
     display:
@@ -1024,13 +924,9 @@ Icons:
           - 'tell: 您以$3的单价卖出了1个热带鱼,收获${js: 1 * 3},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个热带鱼'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:TROPICAL_FISH,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell TROPICAL_FISH 3 1'
-          deny:
-          - 'tell: &c您没有1个热带鱼'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell TROPICAL_FISH 3 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:TROPICAL_FISH,amt:640"))'
           actions:
@@ -1040,7 +936,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个热带鱼' 
 #######################################################################
-
 #######################################################################
   'COD':
     display:
@@ -1070,13 +965,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个鳕鱼,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个鳕鱼'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:COD,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell COD 1 1'
-          deny:
-          - 'tell: &c您没有1个鳕鱼'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell COD 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:COD,amt:640"))'
           actions:
@@ -1086,7 +977,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个鳕鱼' 
 #######################################################################
-
 #######################################################################
   'SALMON':
     display:
@@ -1116,13 +1006,9 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个鲑鱼,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个鲑鱼'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:SALMON,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell SALMON 1 1'
-          deny:
-          - 'tell: &c您没有1个鲑鱼'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell SALMON 1 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:SALMON,amt:640"))'
           actions:
@@ -1132,7 +1018,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个鲑鱼' 
 #######################################################################
-
 #######################################################################
   'LEATHER':
     display:
@@ -1162,13 +1047,9 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个皮革,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个皮革'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:LEATHER,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell LEATHER 0.5 1'
-          deny:
-          - 'tell: &c您没有1个皮革'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell LEATHER 0.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:LEATHER,amt:640"))'
           actions:
@@ -1178,7 +1059,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个皮革' 
 #######################################################################
-
 #######################################################################
   'BONE':
     display:
@@ -1208,13 +1088,9 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个骨头,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个骨头'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:BONE,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell BONE 0.5 1'
-          deny:
-          - 'tell: &c您没有1个骨头'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell BONE 0.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:BONE,amt:640"))'
           actions:
@@ -1224,7 +1100,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个骨头' 
 #######################################################################
-
 #######################################################################
   'FEATHER':
     display:
@@ -1254,13 +1129,9 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个羽毛,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个羽毛'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:FEATHER,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell FEATHER 0.5 1'
-          deny:
-          - 'tell: &c您没有1个羽毛'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell FEATHER 0.5 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:FEATHER,amt:640"))'
           actions:
@@ -1270,7 +1141,6 @@ Icons:
           deny:
           - 'tell: &c您没有640个羽毛' 
 #######################################################################
-
 #######################################################################
   'ROTTEN_FLESH':
     display:
@@ -1300,13 +1170,9 @@ Icons:
           - 'tell: 您以$0.2的单价卖出了1个腐肉,收获${js: 1 * 0.2},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个腐肉'
-      MIDDLE:
-        - condition: 'js: utils.hasItem(player, vars("mat:ROTTEN_FLESH,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell ROTTEN_FLESH 0.2 1'
-          deny:
-          - 'tell: &c您没有1个腐肉'
+      middle:
+        actions:
+        - 'open: Shop-Handler-Sell sell ROTTEN_FLESH 0.2 1'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:ROTTEN_FLESH,amt:640"))'
           actions:
@@ -1316,4 +1182,3 @@ Icons:
           deny:
           - 'tell: &c您没有640个腐肉' 
 #######################################################################
-

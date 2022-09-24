@@ -26,8 +26,8 @@
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
-           DefaultLeave: "你离开了领地&b%residence&r。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b %residence &r。"
+           DefaultLeave: "你离开了领地&b %residence &r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14

@@ -23,7 +23,7 @@ Options:
   # 防频繁点击的间隔
   Min-Click-Delay: 200
   # 强制需要依赖的 PlaceholderAPI 拓展变量
-  Depend-Expansions: ['server', 'player','vault']
+  Depend-Expansions: ['server', 'player','vault','progress']
 
 
 Bindings:

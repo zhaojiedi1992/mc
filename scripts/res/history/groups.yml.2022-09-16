@@ -1,5 +1,5 @@
 Groups:
-    Owner: 
+    owner: 
        Residence:
            CanCreate: true
            MaxResidences: 1000
@@ -27,8 +27,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -38,7 +38,7 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0
           SellCost: 0
@@ -52,7 +52,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    OP: 
+    op: 
        Residence:
            CanCreate: true
            MaxResidences: 1000
@@ -80,8 +80,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -91,7 +91,7 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0
           SellCost: 0
@@ -105,7 +105,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    SVIP: 
+    svip: 
        Residence:
            CanCreate: true
            MaxResidences: 20
@@ -133,8 +133,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -144,10 +144,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.001
-          SellCost: 0
+          SellCost: 0.001
           RenewCost: 0.001
        Flags:
           Permission:
@@ -158,7 +158,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    VIP: 
+    vip: 
        Residence:
            CanCreate: true
            MaxResidences: 10
@@ -186,8 +186,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -197,10 +197,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.01
-          SellCost: 0
+          SellCost: 0.01
           RenewCost: 0.01
        Flags:
           Permission:
@@ -211,7 +211,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.0: 
+    Default: 
        Residence:
            CanCreate: true
            MaxResidences: 1
@@ -239,8 +239,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -250,10 +250,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 1
-          SellCost: 0
+          SellCost: 1
           RenewCost: 1
        Flags:
           Permission:
@@ -264,7 +264,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.1: 
+    lv1: 
        Residence:
            CanCreate: true
            MaxResidences: 2
@@ -292,8 +292,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -303,10 +303,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 1
-          SellCost: 0
+          SellCost: 1
           RenewCost: 1
        Flags:
           Permission:
@@ -317,7 +317,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.2: 
+    lv2: 
        Residence:
            CanCreate: true
            MaxResidences: 4
@@ -345,8 +345,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -356,10 +356,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 1
-          SellCost: 0
+          SellCost: 1
           RenewCost: 1
        Flags:
           Permission:
@@ -370,7 +370,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.3: 
+    lv3: 
        Residence:
            CanCreate: true
            MaxResidences: 6
@@ -398,8 +398,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -409,10 +409,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 1
-          SellCost: 0
+          SellCost: 1
           RenewCost: 1
        Flags:
           Permission:
@@ -423,7 +423,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.4: 
+    lv4: 
        Residence:
            CanCreate: true
            MaxResidences: 8
@@ -451,8 +451,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -462,10 +462,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.5
-          SellCost: 0
+          SellCost: 0.5
           RenewCost: 0.5
        Flags:
           Permission:
@@ -476,7 +476,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.5: 
+    lv5: 
        Residence:
            CanCreate: true
            MaxResidences: 10
@@ -504,8 +504,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -515,10 +515,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.5
-          SellCost: 0
+          SellCost: 0.5
           RenewCost: 0.5
        Flags:
           Permission:
@@ -529,7 +529,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.6: 
+    lv6: 
        Residence:
            CanCreate: true
            MaxResidences: 12
@@ -557,8 +557,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -568,10 +568,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.5
-          SellCost: 0
+          SellCost: 0.5
           RenewCost: 0.5
        Flags:
           Permission:
@@ -582,7 +582,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.7: 
+    lv7: 
        Residence:
            CanCreate: true
            MaxResidences: 14
@@ -610,8 +610,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -621,10 +621,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.5
-          SellCost: 0
+          SellCost: 0.5
           RenewCost: 0.5
        Flags:
           Permission:
@@ -635,7 +635,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.8: 
+    lv8: 
        Residence:
            CanCreate: true
            MaxResidences: 16
@@ -663,8 +663,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -674,10 +674,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.1
-          SellCost: 0
+          SellCost: 0.1
           RenewCost: 0.1
        Flags:
           Permission:
@@ -688,7 +688,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.9: 
+    lv9: 
        Residence:
            CanCreate: true
            MaxResidences: 18
@@ -716,8 +716,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -727,10 +727,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.1
-          SellCost: 0
+          SellCost: 0.1
           RenewCost: 0.1
        Flags:
           Permission:
@@ -741,7 +741,7 @@ Groups:
           World:
                 Global: 
                 WorldNameHere: 
-    Lv.10: 
+    lv10: 
        Residence:
            CanCreate: true
            MaxResidences: 20
@@ -769,8 +769,8 @@ Groups:
            ItemListAccess: true
        Messaging:
            CanChange: true
-           DefaultEnter: "欢迎 %player 来到%owner%创建的领地%residence%。"
-           DefaultLeave: "你离开了领地%residence%。"
+           DefaultEnter: "欢迎 &b%player&r来到&b%owner&r创建的领地&b%residence&r。"
+           DefaultLeave: "你离开了领地&b%residence&r。"
        Lease:
           MaxDays: 16
           RenewIncrement: 14
@@ -780,10 +780,10 @@ Groups:
            MaxRentDays: 31
        Economy:
           CanBuy: true
-          CanSell: false
+          CanSell: true
           IgnoreLimits: false
           BuyCost: 0.1
-          SellCost: 0
+          SellCost: 0.1
           RenewCost: 0.1
        Flags:
           Permission:

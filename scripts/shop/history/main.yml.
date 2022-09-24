@@ -79,7 +79,7 @@ Icons:
       - '&c暂未开放!!!'
     actions:
       all:
-      - 'tell: &4&l尊敬的%player_name%您好,您当前所选功能还未开放!!!'
+      - 'tell: &4&l尊敬的%player%您好,您当前所选功能还未开放!!!'
       # - 'server: d2'
       - 'sound: ENTITY_ITEM_BREAK-1-0'
 
@@ -123,7 +123,7 @@ Icons:
       - '&c暂未开放!!!'
     actions:
       all:
-      - 'tell: &4&l尊敬的%player_name%您好,您当前所选功能还未开放!!!'
+      - 'tell: &4&l尊敬的%player%您好,您当前所选功能还未开放!!!'
         #- 'server: s2'
       - 'sound: ENTITY_ITEM_BREAK-1-0'
       - 'force-close'
