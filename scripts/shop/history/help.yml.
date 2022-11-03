@@ -2,7 +2,8 @@ Title: '&6&l熊猫乐园 &d&l帮助菜单'
 Title-Update: 40
 
 Layout:
-  - '.`help_home`.`plot``res``base`...'
+  - '...`plot``res``base`...'
+  - '...`help_home``res``base`...'
   - '`prev`..`stop`.`menu`..`next`'
 
 Options:

@@ -4,7 +4,7 @@ Title-Update: 40
 Layout:
   - '`WHEAT``BAMBOO``MELON``PUMPKIN``SWEET_BERRIES``BEETROOT``POTATO``CARROT``CACTUS`'
   - '`DIAMOND``RAW_GOLD``RAW_IRON``RAW_COPPER``REDSTONE``COAL``LAPIS_LAZULI`..'
-  - '`CHICKEN``RABBIT``MUTTON``BEEF``TROPICAL_FISH``COD``SALMON``PORKCHOP`.'
+  - '`CHICKEN``RABBIT``MUTTON``BEEF``TROPICAL_FISH``COD``SALMON`..'
   - '`LEATHER``BONE``FEATHER``ROTTEN_FLESH`.....'
   - '`prev`..`stop`.`menu`..`next`'
 
@@ -93,32 +93,32 @@ Icons:
           actions:
           - 'take-item: material:WHEAT,amount:64'
           - 'give-money:  ${js: 64 * 1.5}'
-          - 'tell: 您以$1.5的单价卖出了64个麦子,收获${js: 64 * 1.5},当前余额%vault_eco_balance_fixed% 。'
+          - 'tell: 您以$1.5的单价卖出了64个煤炭,收获${js: 64 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
-          - 'tell: &c您没有64个麦子'
+          - 'tell: &c您没有64个煤炭'
       right:
         - condition: 'js: utils.hasItem(player, vars("mat:WHEAT,amt:1"))'
           actions:
           - 'take-item: material:WHEAT,amount:1'
           - 'give-money:  ${js: 1 * 1.5}'
-          - 'tell: 您以$1.5的单价卖出了1个麦子,收获${js: 1 * 1.5},当前余额%vault_eco_balance_fixed% 。'
+          - 'tell: 您以$1.5的单价卖出了1个煤炭,收获${js: 1 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
-          - 'tell: &c您没有1个麦子'
-      middle:
+          - 'tell: &c您没有1个煤炭'
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:WHEAT,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
           - 'menu: Shop-Handler-Sell sell WHEAT 1.5 1'
           deny:
-          - 'tell: &c您没有1个麦子'
+          - 'tell: &c您没有1个煤炭'
       shift_left:
         - condition: 'js: utils.hasItem(player, vars("mat:WHEAT,amt:640"))'
           actions:
           - 'take-item: material:WHEAT,amount:640'
           - 'give-money:  ${js: 640 * 1.5}'
-          - 'tell: 您以$1.5的单价卖出了640个麦子,收获${js: 640 * 1.5},当前余额%vault_eco_balance_fixed% 。'
+          - 'tell: 您以$1.5的单价卖出了640个煤炭,收获${js: 640 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
-          - 'tell: &c您没有640个麦子' 
+          - 'tell: &c您没有640个煤炭' 
 #######################################################################
 
 #######################################################################
@@ -150,7 +150,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个竹子,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个竹子'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:BAMBOO,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -196,7 +196,7 @@ Icons:
           - 'tell: 您以$3的单价卖出了1个西瓜,收获${js: 1 * 3},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个西瓜'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:MELON,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -242,7 +242,7 @@ Icons:
           - 'tell: 您以$3的单价卖出了1个南瓜,收获${js: 1 * 3},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个南瓜'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:PUMPKIN,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -288,7 +288,7 @@ Icons:
           - 'tell: 您以$1.5的单价卖出了1个甜浆果,收获${js: 1 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个甜浆果'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:SWEET_BERRIES,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -334,7 +334,7 @@ Icons:
           - 'tell: 您以$1.5的单价卖出了1个甜菜,收获${js: 1 * 1.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个甜菜'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:BEETROOT,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -380,7 +380,7 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个马铃薯,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个马铃薯'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:POTATO,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -426,7 +426,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个胡萝卜,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个胡萝卜'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:CARROT,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -472,7 +472,7 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个仙人掌,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个仙人掌'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:CACTUS,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -518,7 +518,7 @@ Icons:
           - 'tell: 您以$30的单价卖出了1个钻石,收获${js: 1 * 30},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个钻石'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:DIAMOND,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -564,7 +564,7 @@ Icons:
           - 'tell: 您以$8的单价卖出了1个粗金,收获${js: 1 * 8},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个粗金'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:RAW_GOLD,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -610,7 +610,7 @@ Icons:
           - 'tell: 您以$5的单价卖出了1个粗铁,收获${js: 1 * 5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个粗铁'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:RAW_IRON,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -656,7 +656,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个粗铜,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个粗铜'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:RAW_COPPER,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -702,7 +702,7 @@ Icons:
           - 'tell: 您以$2的单价卖出了1个红石,收获${js: 1 * 2},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个红石'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:REDSTONE,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -748,7 +748,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个煤炭,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个煤炭'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:COAL,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -794,7 +794,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个青金石,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个青金石'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:LAPIS_LAZULI,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -840,7 +840,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生鸡肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生鸡肉'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:CHICKEN,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -886,7 +886,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生兔肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生兔肉'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:RABBIT,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -932,7 +932,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生羊肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生羊肉'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:MUTTON,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -978,7 +978,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个生牛肉,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个生牛肉'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:BEEF,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -993,52 +993,6 @@ Icons:
           - 'tell: 您以$1的单价卖出了640个生牛肉,收获${js: 640 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有640个生牛肉' 
-#######################################################################
-
-#######################################################################
-  'PORKCHOP':
-    display:
-      update: 20
-      material: PORKCHOP
-      lore:
-      - '&b单价: &e 1'
-      - "&b左键 &a➥ &c卖1组&e${js: 1  *  64}"
-      - "&b右键 &a➥ &c卖1个&e${js: 1  *  1}"
-      - "&b中键 &a➥ &c自定义"
-      - "&bShift+左键 &a➥ &c卖10组&e${js: 1   *  640}"
-      - ''
-    actions:
-      left:
-        - condition: 'js: utils.hasItem(player, vars("mat:PORKCHOP,amt:64"))'
-          actions:
-          - 'take-item: material:PORKCHOP,amount:64'
-          - 'give-money:  ${js: 64 * 1}'
-          - 'tell: 您以$1的单价卖出了64个生猪排,收获${js: 64 * 1},当前余额%vault_eco_balance_fixed% 。'
-          deny:
-          - 'tell: &c您没有64个生猪排'
-      right:
-        - condition: 'js: utils.hasItem(player, vars("mat:PORKCHOP,amt:1"))'
-          actions:
-          - 'take-item: material:PORKCHOP,amount:1'
-          - 'give-money:  ${js: 1 * 1}'
-          - 'tell: 您以$1的单价卖出了1个生猪排,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
-          deny:
-          - 'tell: &c您没有1个生猪排'
-      middle:
-        - condition: 'js: utils.hasItem(player, vars("mat:PORKCHOP,amt:1"))'
-          actions:
-          - 'tell: 打开自定义菜单'
-          - 'menu: Shop-Handler-Sell sell PORKCHOP 1 1'
-          deny:
-          - 'tell: &c您没有1个生猪排'
-      shift_left:
-        - condition: 'js: utils.hasItem(player, vars("mat:PORKCHOP,amt:640"))'
-          actions:
-          - 'take-item: material:PORKCHOP,amount:640'
-          - 'give-money:  ${js: 640 * 1}'
-          - 'tell: 您以$1的单价卖出了640个生猪排,收获${js: 640 * 1},当前余额%vault_eco_balance_fixed% 。'
-          deny:
-          - 'tell: &c您没有640个生猪排' 
 #######################################################################
 
 #######################################################################
@@ -1070,7 +1024,7 @@ Icons:
           - 'tell: 您以$3的单价卖出了1个热带鱼,收获${js: 1 * 3},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个热带鱼'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:TROPICAL_FISH,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -1116,7 +1070,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个鳕鱼,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个鳕鱼'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:COD,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -1162,7 +1116,7 @@ Icons:
           - 'tell: 您以$1的单价卖出了1个鲑鱼,收获${js: 1 * 1},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个鲑鱼'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:SALMON,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -1208,7 +1162,7 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个皮革,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个皮革'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:LEATHER,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -1254,7 +1208,7 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个骨头,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个骨头'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:BONE,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -1300,7 +1254,7 @@ Icons:
           - 'tell: 您以$0.5的单价卖出了1个羽毛,收获${js: 1 * 0.5},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个羽毛'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:FEATHER,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'
@@ -1346,7 +1300,7 @@ Icons:
           - 'tell: 您以$0.2的单价卖出了1个腐肉,收获${js: 1 * 0.2},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有1个腐肉'
-      middle:
+      MIDDLE:
         - condition: 'js: utils.hasItem(player, vars("mat:ROTTEN_FLESH,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'

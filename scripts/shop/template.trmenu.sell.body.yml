@@ -27,7 +27,7 @@
           - 'tell: 您以$<price>的单价卖出了<right_cnt>个<cname>,收获${js: <right_cnt> * <price>},当前余额%vault_eco_balance_fixed% 。'
           deny:
           - 'tell: &c您没有<right_cnt>个<cname>'
-      MIDDLE:
+      middle:
         - condition: 'js: utils.hasItem(player, vars("mat:<name>,amt:1"))'
           actions:
           - 'tell: 打开自定义菜单'

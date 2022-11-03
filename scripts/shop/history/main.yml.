@@ -3,9 +3,9 @@ Title-Update: 40
 
 Layout:
   - '....`hub`....'
-  - '...`d1`.`d2`...'
-  - '..`s1`.`s2`.`s3`..'
-  - '`trash`.`sell`.`skin`.`level`.`help`'
+  - '..`d1`.`d2`.`z1`.`s5`'
+  - '.`s1`.`s2`.`s3`.`s4`.'
+  - '`trash`.`shop`.`skin`.`level`.`help`'
   - '....`stop`....'
 
 Options:
@@ -74,13 +74,12 @@ Icons:
       lore: 
       - '小名: 巨型地皮区'
       - '大名: d2'
-      - '说明: 嘿嘿嘿,我要大House'
+      - '说明1: 嘿嘿嘿,我要大House'
+      - '说明2: 价格1W'
       - '指令: /server d2'
-      - '&c暂未开放!!!'
     actions:
       all:
-      - 'tell: &4&l尊敬的%player%您好,您当前所选功能还未开放!!!'
-      # - 'server: d2'
+      - 'server: d2'
       - 'sound: ENTITY_ITEM_BREAK-1-0'
 
   's1':
@@ -120,14 +119,61 @@ Icons:
       - '大名: s3'
       - '说明: 圈地圈地'
       - '指令: /server s3'
-      - '&c暂未开放!!!'
     actions:
       all:
-      - 'tell: &4&l尊敬的%player%您好,您当前所选功能还未开放!!!'
-        #- 'server: s2'
+      - 'server: s3'
+      - 'sound: ENTITY_ITEM_BREAK-1-0'
+      - 'force-close'
+  's4':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRmYmU4NTc4N2MxMjc4N2RkY2ViODUyZDcxNDJkYWU5MDc1NzhhMjcyY2MyMDIxNTU1YmE4MDVkMjI3ZWE3In19fQ=='
+      name: 's4'
+      lore: 
+      - '小名: 生存四区'
+      - '大名: s4'
+      - '说明: 圈地圈地'
+      - '指令: /server s4'
+    actions:
+      all:
+      - 'server: s4'
+      - 'sound: ENTITY_ITEM_BREAK-1-0'
+      - 'force-close'
+  's5':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMxYmQ3Y2UyZDUyN2VjNmY3NmI4ZTgxZjE5ZDY5ZDFiOWZmNGQ1YjZjZDZjYzc2NGVlZDE5NDVhNmM2YyJ9fX0='
+      name: 's5'
+      lore: 
+      - '小名: 生存五区'
+      - '大名: s5'
+      - '说明: 生电区你懂得'
+      - '说明: 白名单机制，需要你在QQ群找管理申请的'
+      - '说明: 优先找n_nY_MC申请'
+      - '指令: /server s5'
+    actions:
+      all:
+      - 'server: s5'
       - 'sound: ENTITY_ITEM_BREAK-1-0'
       - 'force-close'
  
+ 
+  'z1':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI5YzgxN2U0NDRlZDNkYjE3YWNlYTk5MGYxNzgzMDE3YmQ0ZWM4ZjAyM2YyMzE5MTY1NzhkZTViZmM1YTc3ZCJ9fX0='
+      name: 'z1'
+      lore: 
+      - '小名: 资源1区'
+      - '大名: z1'
+      - '说明: 挖矿挖矿'
+      - '指令: /server z1'
+      - '&r暂未开放'
+    actions:
+      all:
+      #- 'server: z1'
+      - 'tell: 暂未开放。。。'
+      - 'sound: ENTITY_ITEM_BREAK-1-0'
+      - 'force-close'
+ 
+
   'skin':
     display:
       material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTcxMzE3NDJiZmQ3YTdmYTIxMmMwNDU5YjEyZWNkNDA1ZTAwMmM3YzkyZWFkYmI5MmFkODM2MGY3MDM0YWZiNyJ9fX0='
@@ -149,15 +195,15 @@ Icons:
     actions:
       all:
       - 'force-open: help'
-  'sell':
+  'shop':
     display:
       material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTQ1NzNkNjU0NmJhNzFlZmYzYjY3ZTUxMTZiMGQ3NWUyOWFkZjY3MTM1ZTk1MzM4ZGNhODNlZWMyODhmMjcifX19'
-      name: '&b&l系统收购'
+      name: '&b&l系统商店'
       lore: 
-      - '&b左键 &a➥ &c进入系统收购'
+      - '&b左键 &a➥ &c进入系统商店'
     actions:
       all:
-      - 'force-open: sell'
+      - 'force-open: shop'
   'stop':
     display:
       material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNiYTAyNGMwNzRiNWQ5YWRmNTJlY2VjZGVkNmI0YTlkMTRmMWEyZjQxMzg2MzVkYjc5YTk1NmZiYWIxNDM1MCJ9fX0='

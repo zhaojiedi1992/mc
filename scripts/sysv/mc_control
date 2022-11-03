@@ -11,29 +11,41 @@ java_cmd="/usr/bin/java"
 mc_instance_dir="/mc/instances"
 log_file=$mc_instance_dir/$name/nohup.log
 
+jar_name=" $name.jar"
+
 get_rcon_port(){
 	local area=$1
 	case $area in 
 		bc)  echo 0;;
+		test_bc)  echo 0;;
 		hub) echo 11000;;
+		test_hub) echo 11100;;
 		d1)  echo 21001;;
 		d2)  echo 21002;;
 		s1)  echo 31001;;
+		test_s1)  echo 31101;;
 		s2)  echo 31002;;
+		test_s2)  echo 31102;;
+		s3)  echo 31003;;
+		s4)  echo 31004;;
+		s5)  echo 31005;;
+		z1)  echo 41001;;
 		*)   echo 0;;
 	esac
 }
 get_jvm(){
 	local area=$1
 	case $area in 
-		bc)  echo " -Xms1G -Xmx1G ";;
-		hub)  echo " -Xms1G -Xmx1G ";;
-		d1)  echo " -Xms1G -Xmx1G ";;
-		d2)  echo " -Xms1G -Xmx1G ";;
-		#s1)  echo " -Xms2G -Xmx8G ";;
-		s1)  echo " -Xms2G -Xmx4G ";;
-		s2)  echo " -Xms2G -Xmx4G ";;
-		*)  echo " -Xms1G -Xmx1G ";;
+		bc)  echo " -Xms4G -Xmx4G ";;
+		hub)  echo " -Xms4G -Xmx4G ";;
+		d1)  echo " -Xms4G -Xmx4G ";;
+		d2)  echo " -Xms4G -Xmx4G ";;
+		s1)  echo " -Xms16G -Xmx16G ";;
+		s2)  echo " -Xms16G -Xmx16G ";;
+		s3)  echo " -Xms16G -Xmx16G ";;
+		s4)  echo " -Xms16G -Xmx16G ";;
+		z1)  echo " -Xms16G -Xmx16G ";;
+		*)  echo " -Xms1G -Xmx2G ";;
 	esac
 }
 
@@ -41,12 +53,11 @@ get_jvm(){
 base_dir=${mc_instance_dir}/$name
 mcrcon_pre="${mcrcon_cmd} -H $host -p ${rcon_code} -P $(get_rcon_port $name)  "
 mc_exist(){
-	local jar_name=$1
-	ps aux |grep $jar_name |grep -v grep >/dev/null
+	ps aux |grep "${jar_name}" |grep -v grep | >/dev/null
 }
 
 status(){
-	mc_exist $name.jar
+	mc_exist
 	if [ $? -eq 0 ]; then
 		echo "$name running"
 	else
@@ -55,13 +66,17 @@ status(){
 }
 start() {
 	cd $base_dir
+	echo "$base_dir"
+	if [ "X$name" == "Xs5" ] ; then
+		cd server
+	fi
 	nohup ${java_cmd} $(get_jvm $name) -jar $name.jar --nogui >>${log_file} 2>>${log_file} &
 }
 
 stop() {
 	cd $base_dir
 
-	mc_exist $name.jar
+	mc_exist 
 	if [ $? -ne 0 ]; then
 		return
 	fi
@@ -69,14 +84,14 @@ stop() {
 		stop_kill
 		return 
 	fi
-	conn "服务器准备重启5s..." 
-	sleep 2
+	conn "bc 分区$name准备重启5s..." 
+	sleep 5
 	conn "save-all"
-	sleep 3
+	sleep 5
 	conn "stop"
 	sleep 5
 	for i in $(seq 1 10); do 
-		mc_exist $name.jar
+		mc_exist 
 		if [ $? -ne 0 ] ; then 
 			return 
 		else
@@ -87,7 +102,7 @@ stop() {
 }
 stop_kill(){
 	cd $base_dir 
-	ps aux |grep $name.jar |grep -v grep  |awk '{print $2}' |while read pid ; do
+	ps aux |grep "${jar_name}" |grep -v grep |awk '{print $2}' |while read pid ; do
 		kill -9 $pid
 	done
 }

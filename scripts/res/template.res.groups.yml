@@ -7,18 +7,18 @@
            MinEastWest: 2
            MaxNorthSouth: <size>
            MinNorthSouth: 2
-           MaxUpDown: 200
-           MinUpDown: 3
+           MaxUpDown: 500
+           MinUpDown: 1
            MinHeight: -100
-           MaxHeight: 300
+           MaxHeight: 500
            MaxSubzonesInArea: <max>
            SubzoneDepth: 3
            SubzoneMaxEastWest: <size>
            SubzoneMinEastWest: 2
            SubzoneMaxNorthSouth: <size>
            SubzoneMinNorthSouth: 2
-           SubzoneMaxUpDown: 200
-           SubzoneMinUpDown: 3
+           SubzoneMaxUpDown: 500
+           SubzoneMinUpDown: 1
            CanTeleport: true
            Unstuck: true
            Kick: False
