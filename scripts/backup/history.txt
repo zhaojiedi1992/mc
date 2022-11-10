@@ -1,0 +1,7 @@
+mariabackup --backup --target-dir=/mc_bak/mc_db/2022-11-10/12 --incremental-basedir=/mc_bak/mc_db/2022-11-10/11  --user=root --password=panda142857 --host=127.0.0.1 
+mariabackup --backup --target-dir=/mc_bak/mc_db/2022-11-10/13 --incremental-basedir=/mc_bak/mc_db/2022-11-10/12  --user=root --password=panda142857 --host=127.0.0.1 
+mariabackup --backup --target-dir=/mc_bak/mc_db/2022-11-10/14 --incremental-basedir=/mc_bak/mc_db/2022-11-10/00  --user=root --password=panda142857 --host=127.0.0.1 
+mariabackup --backup --target-dir=/mc_bak/mc_db/2022-11-10/15 --incremental-basedir=/mc_bak/mc_db/2022-11-10/00  --user=root --password=panda142857 --host=127.0.0.1 
+mariabackup --backup --target-dir=/mc_bak/mc_db/2022-11-10/16 --incremental-basedir=/mc_bak/mc_db/2022-11-10/00  --user=root --password=panda142857 --host=127.0.0.1 
+mariabackup --backup --target-dir=/mc_bak/mc_db/2022-11-10/17 --incremental-basedir=/mc_bak/mc_db/2022-11-10/00  --user=root --password=panda142857 --host=127.0.0.1 
+mariabackup --backup --target-dir=/mc_bak/mc_db/2022-11-10/18 --incremental-basedir=/mc_bak/mc_db/2022-11-10/00  --user=root --password=panda142857 --host=127.0.0.1 

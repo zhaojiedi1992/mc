@@ -17,6 +17,7 @@ get_rcon_port(){
 	local area=$1
 	case $area in 
 		bc)  echo 0;;
+		wtf)  echo 0;;
 		test_bc)  echo 0;;
 		hub) echo 11000;;
 		test_hub) echo 11100;;
@@ -37,6 +38,7 @@ get_jvm(){
 	local area=$1
 	case $area in 
 		bc)  echo " -Xms4G -Xmx4G ";;
+		wtf)  echo " -Xms4G -Xmx4G ";;
 		hub)  echo " -Xms4G -Xmx4G ";;
 		d1)  echo " -Xms4G -Xmx4G ";;
 		d2)  echo " -Xms4G -Xmx4G ";;
@@ -81,6 +83,10 @@ stop() {
 		return
 	fi
 	if [ X$name == X"bc" ] ; then 
+		stop_kill
+		return 
+	fi
+	if [ X$name == X"wtf" ] ; then 
 		stop_kill
 		return 
 	fi
