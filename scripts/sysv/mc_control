@@ -6,9 +6,9 @@ echo "mc=$name"
 
 host=127.0.0.1
 rcon_code=panda142857
-mcrcon_cmd="/mc/mcrcon/mcrcon"
+mcrcon_cmd="/home/mc/mcrcon/mcrcon"
 java_cmd="/usr/bin/java"
-mc_instance_dir="/mc/instances"
+mc_instance_dir="/home/mc/instances"
 log_file=$mc_instance_dir/$name/nohup.log
 
 jar_name=" $name.jar"
