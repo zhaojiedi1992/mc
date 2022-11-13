@@ -17,8 +17,9 @@ before_hour=$(echo "(${hour}-1+24)%24" |bc)
 dst_dir="/mc_bak/mc_db/${dt}/${hour}"
 # 基于增量的位置
 base_dst_dir="/mc_bak/mc_db/${dt}/00"
-# 备份前缀
-backup_prefix=" --user=root --password=panda142857 --host=127.0.0.1 "
+# 备份前缀 这里建议写到.my.conf文件中，记录账户，密码，主机信息。
+backup_prefix="  "
+#backup_prefix=" --user=root --password=xxxxxxxxx --host=127.0.0.1 "
 
 # 确保目录存在
 mkdir -pv ${dst_dir} >/dev/null 2>/dev/null

@@ -1,0 +1,2 @@
+[00] 2022-11-11 04:01:01 Error: cannot open /mc_bak/mc_db/2022-11-11/00//xtrabackup_checkpoints
+[00] 2022-11-11 04:01:01 mariabackup: error: failed to read metadata from /mc_bak/mc_db/2022-11-11/00//xtrabackup_checkpoints

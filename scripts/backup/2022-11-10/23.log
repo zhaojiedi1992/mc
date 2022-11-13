@@ -1,0 +1,1684 @@
+[00] 2022-11-10 23:01:01 Connecting to MySQL server host: 127.0.0.1, user: root, password: set, port: not set, socket: not set
+[00] 2022-11-10 23:01:01 Using server version 10.3.28-MariaDB
+mariabackup based on MariaDB server 10.3.28-MariaDB Linux (x86_64)
+[00] 2022-11-10 23:01:01 incremental backup from 10561135819 is enabled.
+[00] 2022-11-10 23:01:01 uses posix_fadvise().
+[00] 2022-11-10 23:01:01 cd to /mc/mysql/data/
+[00] 2022-11-10 23:01:01 open files limit requested 0, set to 40960
+[00] 2022-11-10 23:01:01 mariabackup: using the following InnoDB configuration:
+[00] 2022-11-10 23:01:01 innodb_data_home_dir = 
+[00] 2022-11-10 23:01:01 innodb_data_file_path = ibdata1:12M:autoextend
+[00] 2022-11-10 23:01:01 innodb_log_group_home_dir = ./
+[00] 2022-11-10 23:01:01 InnoDB: Using Linux native AIO
+2022-11-10 23:01:01 0 [Note] InnoDB: Number of pools: 1
+[00] 2022-11-10 23:01:01 mariabackup: Generating a list of tablespaces
+2022-11-10 23:01:01 0 [Warning] InnoDB: Allocated tablespace ID 1 for mysql/innodb_table_stats, old maximum was 0
+[00] 2022-11-10 23:01:02 >> log scanned up to (10641383621)
+[01] 2022-11-10 23:01:02 Copying ibdata1 to /mc_bak/mc_db/2022-11-10/23/ibdata1.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./mysql/innodb_table_stats.ibd to /mc_bak/mc_db/2022-11-10/23/mysql/innodb_table_stats.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./mysql/innodb_index_stats.ibd to /mc_bak/mc_db/2022-11-10/23/mysql/innodb_index_stats.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./mysql/transaction_registry.ibd to /mc_bak/mc_db/2022-11-10/23/mysql/transaction_registry.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./mysql/gtid_slave_pos.ibd to /mc_bak/mc_db/2022-11-10/23/mysql/gtid_slave_pos.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./PlayerDataSQL/PlayerDataSQL.ibd to /mc_bak/mc_db/2022-11-10/23/PlayerDataSQL/PlayerDataSQL.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./VentureChat/VentureChat.ibd to /mc_bak/mc_db/2022-11-10/23/VentureChat/VentureChat.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./authme/authme.ibd to /mc_bak/mc_db/2022-11-10/23/authme/authme.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./minecraft/luckperms_actions.ibd to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_actions.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./minecraft/luckperms_group_permissions.ibd to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_group_permissions.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./minecraft/luckperms_groups.ibd to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_groups.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./minecraft/luckperms_messenger.ibd to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_messenger.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./minecraft/luckperms_players.ibd to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_players.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./minecraft/luckperms_tracks.ibd to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_tracks.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./minecraft/luckperms_user_permissions.ibd to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_user_permissions.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./money/xconomy.ibd to /mc_bak/mc_db/2022-11-10/23/money/xconomy.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./money/xconomyrecord.ibd to /mc_bak/mc_db/2022-11-10/23/money/xconomyrecord.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_data.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_data.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_external_cache.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_external_cache.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_log_changes.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_changes.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_log_others.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_others.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_log_purchase.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_purchase.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_log_transaction.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_transaction.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_message.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_message.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_metadata.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_metadata.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_players.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_players.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_shop_map.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_shop_map.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./quickshop/qs_shops.ibd to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_shops.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./tab/tab_groups.ibd to /mc_bak/mc_db/2022-11-10/23/tab/tab_groups.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./tab/tab_users.ibd to /mc_bak/mc_db/2022-11-10/23/tab/tab_users.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./trixey/trchat_user_data.ibd to /mc_bak/mc_db/2022-11-10/23/trixey/trchat_user_data.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./trmenu/trmenu_user_data.ibd to /mc_bak/mc_db/2022-11-10/23/trmenu/trmenu_user_data.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_art_map.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_block.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_block.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_chat.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_chat.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_command.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_command.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_container.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_container.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_item.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_item.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_database_lock.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_entity.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_entity.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_entity_map.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_material_map.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_session.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_session.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_sign.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_sign.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_skull.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_skull.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_user.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_user.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_username_log.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_version.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_version.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_d1_world.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_world.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_s2_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_art_map.ibd.delta
+[01] 2022-11-10 23:01:02         ...done
+[01] 2022-11-10 23:01:02 Copying ./CoreProtect/cp_s2_block.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_block.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_chat.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_chat.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_command.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_command.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_container.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_container.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_item.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_item.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_database_lock.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_entity.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_entity.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_entity_map.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_material_map.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_session.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_session.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_sign.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_sign.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_skull.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_skull.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_user.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_user.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_username_log.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_version.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_version.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s2_world.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_world.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s1_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_art_map.ibd.delta
+[01] 2022-11-10 23:01:03         ...done
+[01] 2022-11-10 23:01:03 Copying ./CoreProtect/cp_s1_block.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_block.ibd.delta
+[00] 2022-11-10 23:01:03 >> log scanned up to (10641384232)
+[00] 2022-11-10 23:01:04 >> log scanned up to (10641384278)
+[01] 2022-11-10 23:01:05         ...done
+[01] 2022-11-10 23:01:05 Copying ./CoreProtect/cp_s1_chat.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_chat.ibd.delta
+[01] 2022-11-10 23:01:05         ...done
+[01] 2022-11-10 23:01:05 Copying ./CoreProtect/cp_s1_command.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_command.ibd.delta
+[01] 2022-11-10 23:01:05         ...done
+[01] 2022-11-10 23:01:05 Copying ./CoreProtect/cp_s1_container.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_container.ibd.delta
+[00] 2022-11-10 23:01:05 >> log scanned up to (10641384604)
+[01] 2022-11-10 23:01:05         ...done
+[01] 2022-11-10 23:01:05 Copying ./CoreProtect/cp_s1_item.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_item.ibd.delta
+[01] 2022-11-10 23:01:05         ...done
+[01] 2022-11-10 23:01:05 Copying ./CoreProtect/cp_s1_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_database_lock.ibd.delta
+[01] 2022-11-10 23:01:05         ...done
+[01] 2022-11-10 23:01:05 Copying ./CoreProtect/cp_s1_entity.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_entity.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_entity_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_material_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_session.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_sign.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_sign.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_skull.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_skull.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_user.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_username_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_version.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_world.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_world.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_art_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_block.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_block.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_chat.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_chat.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_command.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_command.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_container.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_container.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_item.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_item.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_database_lock.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_entity.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_entity.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_entity_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_material_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_session.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_sign.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_sign.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_skull.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_skull.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_user.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_username_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_version.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_world.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_world.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_art_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_block.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_block.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_chat.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_chat.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_command.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_command.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_container.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_container.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_item.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_item.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_database_lock.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_entity.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_entity.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_entity_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_material_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_session.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_sign.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_sign.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_skull.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_skull.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_user.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_username_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_version.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_world.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_world.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_art_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_block.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_block.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_chat.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_chat.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_command.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_command.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_container.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_container.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_item.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_item.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_database_lock.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_entity.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_entity.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_entity_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_material_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_session.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_sign.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_sign.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_skull.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_skull.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_user.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_username_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_version.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_world.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_world.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_art_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_block.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_block.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_chat.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_chat.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_command.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_command.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_container.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_container.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_item.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_item.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_database_lock.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_entity.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_entity.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_entity_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_material_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_session.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_sign.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_sign.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_skull.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_skull.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_user.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_username_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_version.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_world.ibd to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_world.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./InvSync/PlayerData.ibd to /mc_bak/mc_db/2022-11-10/23/InvSync/PlayerData.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./KnapsackToGo4/PlayerData.ibd to /mc_bak/mc_db/2022-11-10/23/KnapsackToGo4/PlayerData.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./KnapsackToGo4/LockServer.ibd to /mc_bak/mc_db/2022-11-10/23/KnapsackToGo4/LockServer.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/migration_log.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/migration_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/kv_store.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/kv_store.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/query_history_star.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/query_history_star.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team_role.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/team_role.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_auth.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/user_auth.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/cache_data.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/cache_data.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_keys.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/data_keys.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/builtin_role.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/builtin_role.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/temp_user.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/temp_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/star.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/star.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/org.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/org.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/org_user.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/org_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/permission.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/permission.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_tag.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_tag.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/entity_event.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/entity_event.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/preferences.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/preferences.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_rule_tag.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_rule_tag.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/annotation.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/annotation.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/annotation_tag.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/annotation_tag.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/team.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team_member.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/team_member.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_instance.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_instance.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_acl.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_acl.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/server_lock.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/server_lock.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_rule.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_rule.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/correlation.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/correlation.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_provisioning.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_provisioning.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/library_element_connection.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/library_element_connection.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/seed_assignment.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/seed_assignment.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/data_source.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/short_url.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/short_url.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/report.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/report.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/api_key.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/api_key.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_notification_state.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_notification_state.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_public.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_public.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/test_data.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/test_data.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/tag.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/tag.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/login_attempt.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/login_attempt.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/secrets.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/secrets.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_role.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/user_role.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_snapshot.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_snapshot.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/quota.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/quota.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/plugin_setting.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/plugin_setting.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/session.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/playlist.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/playlist.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/playlist_item.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/playlist_item.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_auth_token.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/user_auth_token.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/role.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/role.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_notification.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_notification.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_version.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/file.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/file.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_rule_version.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_rule_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/ngalert_configuration.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/ngalert_configuration.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/provenance_type.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/provenance_type.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_image.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_image.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/library_element.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/library_element.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/query_history.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/query_history.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_configuration.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/alert_configuration.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/setting.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/setting.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/file_meta.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/file_meta.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source_usage_by_day.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/data_source_usage_by_day.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_usage_by_day.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_usage_by_day.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_usage_sums.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_usage_sums.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_public_usage_by_day.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_public_usage_by_day.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_dashboard_views.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/user_dashboard_views.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_stats.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/user_stats.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source_cache.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/data_source_cache.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source_acl.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/data_source_acl.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/license_token.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/license_token.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/recording_rules.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/recording_rules.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/remote_write_targets.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/remote_write_targets.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/report_settings.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/report_settings.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/report_dashboards.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/report_dashboards.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team_group.ibd to /mc_bak/mc_db/2022-11-10/23/grafana/team_group.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_VentureChat/VentureChat.ibd to /mc_bak/mc_db/2022-11-10/23/test_VentureChat/VentureChat.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_money/xconomy.ibd to /mc_bak/mc_db/2022-11-10/23/test_money/xconomy.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_money/xconomyrecord.ibd to /mc_bak/mc_db/2022-11-10/23/test_money/xconomyrecord.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_user_permissions.ibd to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_user_permissions.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_group_permissions.ibd to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_group_permissions.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_players.ibd to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_players.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_groups.ibd to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_groups.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_actions.ibd to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_actions.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_tracks.ibd to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_tracks.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_messenger.ibd to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_messenger.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_KnapsackToGo4/PlayerData.ibd to /mc_bak/mc_db/2022-11-10/23/test_KnapsackToGo4/PlayerData.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_KnapsackToGo4/LockServer.ibd to /mc_bak/mc_db/2022-11-10/23/test_KnapsackToGo4/LockServer.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_trmenu/trmenu_user_data.ibd to /mc_bak/mc_db/2022-11-10/23/test_trmenu/trmenu_user_data.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_authme/test_authme.ibd to /mc_bak/mc_db/2022-11-10/23/test_authme/test_authme.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_art_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_block.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_block.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_chat.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_chat.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_command.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_command.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_container.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_container.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_item.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_item.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_database_lock.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_entity.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_entity.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_entity_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_material_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_session.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_sign.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_sign.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_skull.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_skull.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_user.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_username_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_version.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_world.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_world.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_art_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_art_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_block.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_block.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_chat.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_chat.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_command.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_command.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_container.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_container.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_item.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_item.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_database_lock.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_database_lock.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_entity.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_entity.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_entity_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_entity_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_material_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_material_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_blockdata_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_blockdata_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_session.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_session.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_sign.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_sign.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_skull.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_skull.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_user.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_user.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_username_log.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_username_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_version.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_version.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_world.ibd to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_world.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_data.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_data.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_shops.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_shops.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_shop_map.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_shop_map.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_message.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_message.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_metadata.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_metadata.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_players.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_players.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_external_cache.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_external_cache.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_purchase.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_purchase.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_transaction.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_transaction.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_changes.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_changes.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_others.ibd to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_others.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_servers.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_servers.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_users.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_users.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_user_info.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_user_info.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_geolocations.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_geolocations.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_nicknames.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_nicknames.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_join_address.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_join_address.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_sessions.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_sessions.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_kills.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_kills.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_ping.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_ping.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_tps.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_tps.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_worlds.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_worlds.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_world_times.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_world_times.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_security.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_security.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_settings.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_settings.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_cookies.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_cookies.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_access_log.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_access_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_icons.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_icons.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_plugins.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_plugins.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_tabs.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_tabs.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_providers.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_providers.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_user_values.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_user_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_server_values.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_server_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_tables.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_tables.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_user_table_values.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_user_table_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_server_table_values.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_server_table_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_groups.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_groups.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_version_protocol.ibd to /mc_bak/mc_db/2022-11-10/23/Plan/plan_version_protocol.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_tab/tab_groups.ibd to /mc_bak/mc_db/2022-11-10/23/test_tab/tab_groups.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_tab/tab_users.ibd to /mc_bak/mc_db/2022-11-10/23/test_tab/tab_users.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_servers.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_servers.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_users.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_users.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_user_info.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_user_info.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_geolocations.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_geolocations.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_nicknames.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_nicknames.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_join_address.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_join_address.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_sessions.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_sessions.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_kills.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_kills.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_ping.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_ping.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_tps.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_tps.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_worlds.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_worlds.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_world_times.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_world_times.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_security.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_security.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_settings.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_settings.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_cookies.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_cookies.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_access_log.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_access_log.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_icons.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_icons.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_plugins.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_plugins.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_tabs.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_tabs.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_providers.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_providers.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_user_values.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_user_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_server_values.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_server_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_tables.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_tables.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_user_table_values.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_user_table_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_server_table_values.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_server_table_values.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_groups.ibd to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_groups.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./skin/Players.ibd to /mc_bak/mc_db/2022-11-10/23/skin/Players.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./skin/Skins.ibd to /mc_bak/mc_db/2022-11-10/23/skin/Skins.ibd.delta
+[01] 2022-11-10 23:01:06         ...done
+[00] 2022-11-10 23:01:06 Executing FLUSH NO_WRITE_TO_BINLOG TABLES...
+[00] 2022-11-10 23:01:06 Executing FLUSH TABLES WITH READ LOCK...
+[00] 2022-11-10 23:01:06 Starting to backup non-InnoDB tables and files
+[01] 2022-11-10 23:01:06 Copying ./mysql/db.opt to /mc_bak/mc_db/2022-11-10/23/mysql/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/db.frm to /mc_bak/mc_db/2022-11-10/23/mysql/db.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/db.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/db.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/db.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/db.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/host.frm to /mc_bak/mc_db/2022-11-10/23/mysql/host.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/host.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/host.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/host.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/host.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/user.frm to /mc_bak/mc_db/2022-11-10/23/mysql/user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/user.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/user.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/user.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/user.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/roles_mapping.frm to /mc_bak/mc_db/2022-11-10/23/mysql/roles_mapping.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/roles_mapping.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/roles_mapping.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/roles_mapping.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/roles_mapping.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/func.frm to /mc_bak/mc_db/2022-11-10/23/mysql/func.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/func.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/func.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/func.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/func.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/plugin.frm to /mc_bak/mc_db/2022-11-10/23/mysql/plugin.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/plugin.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/plugin.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/plugin.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/plugin.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/servers.frm to /mc_bak/mc_db/2022-11-10/23/mysql/servers.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/servers.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/servers.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/servers.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/servers.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/tables_priv.frm to /mc_bak/mc_db/2022-11-10/23/mysql/tables_priv.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/tables_priv.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/tables_priv.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/tables_priv.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/tables_priv.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/columns_priv.frm to /mc_bak/mc_db/2022-11-10/23/mysql/columns_priv.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/columns_priv.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/columns_priv.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/columns_priv.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/columns_priv.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_topic.frm to /mc_bak/mc_db/2022-11-10/23/mysql/help_topic.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_topic.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/help_topic.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_topic.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/help_topic.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_category.frm to /mc_bak/mc_db/2022-11-10/23/mysql/help_category.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_category.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/help_category.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_category.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/help_category.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_relation.frm to /mc_bak/mc_db/2022-11-10/23/mysql/help_relation.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_relation.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/help_relation.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_relation.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/help_relation.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_keyword.frm to /mc_bak/mc_db/2022-11-10/23/mysql/help_keyword.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_keyword.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/help_keyword.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/help_keyword.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/help_keyword.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_name.frm to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_name.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_name.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_name.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_name.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_name.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone.frm to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_transition.frm to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_transition.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_transition.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_transition.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_transition.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_transition.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_transition_type.frm to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_transition_type.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_transition_type.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_transition_type.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_transition_type.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_transition_type.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_leap_second.frm to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_leap_second.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_leap_second.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_leap_second.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/time_zone_leap_second.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/time_zone_leap_second.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/proc.frm to /mc_bak/mc_db/2022-11-10/23/mysql/proc.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/proc.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/proc.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/proc.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/proc.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/procs_priv.frm to /mc_bak/mc_db/2022-11-10/23/mysql/procs_priv.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/procs_priv.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/procs_priv.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/procs_priv.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/procs_priv.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/general_log.frm to /mc_bak/mc_db/2022-11-10/23/mysql/general_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/general_log.CSM to /mc_bak/mc_db/2022-11-10/23/mysql/general_log.CSM
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/general_log.CSV to /mc_bak/mc_db/2022-11-10/23/mysql/general_log.CSV
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/slow_log.frm to /mc_bak/mc_db/2022-11-10/23/mysql/slow_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/slow_log.CSM to /mc_bak/mc_db/2022-11-10/23/mysql/slow_log.CSM
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/slow_log.CSV to /mc_bak/mc_db/2022-11-10/23/mysql/slow_log.CSV
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/event.frm to /mc_bak/mc_db/2022-11-10/23/mysql/event.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/event.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/event.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/event.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/event.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/innodb_table_stats.frm to /mc_bak/mc_db/2022-11-10/23/mysql/innodb_table_stats.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/innodb_index_stats.frm to /mc_bak/mc_db/2022-11-10/23/mysql/innodb_index_stats.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/transaction_registry.frm to /mc_bak/mc_db/2022-11-10/23/mysql/transaction_registry.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/proxies_priv.frm to /mc_bak/mc_db/2022-11-10/23/mysql/proxies_priv.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/proxies_priv.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/proxies_priv.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/proxies_priv.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/proxies_priv.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/table_stats.frm to /mc_bak/mc_db/2022-11-10/23/mysql/table_stats.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/table_stats.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/table_stats.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/table_stats.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/table_stats.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/column_stats.frm to /mc_bak/mc_db/2022-11-10/23/mysql/column_stats.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/column_stats.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/column_stats.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/column_stats.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/column_stats.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/index_stats.frm to /mc_bak/mc_db/2022-11-10/23/mysql/index_stats.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/index_stats.MYI to /mc_bak/mc_db/2022-11-10/23/mysql/index_stats.MYI
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/index_stats.MYD to /mc_bak/mc_db/2022-11-10/23/mysql/index_stats.MYD
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./mysql/gtid_slave_pos.frm to /mc_bak/mc_db/2022-11-10/23/mysql/gtid_slave_pos.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./performance_schema/db.opt to /mc_bak/mc_db/2022-11-10/23/performance_schema/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./PlayerDataSQL/db.opt to /mc_bak/mc_db/2022-11-10/23/PlayerDataSQL/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./PlayerDataSQL/PlayerDataSQL.frm to /mc_bak/mc_db/2022-11-10/23/PlayerDataSQL/PlayerDataSQL.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./VentureChat/db.opt to /mc_bak/mc_db/2022-11-10/23/VentureChat/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./VentureChat/VentureChat.frm to /mc_bak/mc_db/2022-11-10/23/VentureChat/VentureChat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./authme/db.opt to /mc_bak/mc_db/2022-11-10/23/authme/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./authme/authme.frm to /mc_bak/mc_db/2022-11-10/23/authme/authme.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/db.opt to /mc_bak/mc_db/2022-11-10/23/minecraft/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/luckperms_actions.frm to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_actions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/luckperms_group_permissions.frm to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_group_permissions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/luckperms_groups.frm to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_groups.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/luckperms_messenger.frm to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_messenger.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/luckperms_players.frm to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_players.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/luckperms_tracks.frm to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_tracks.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./minecraft/luckperms_user_permissions.frm to /mc_bak/mc_db/2022-11-10/23/minecraft/luckperms_user_permissions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./money/db.opt to /mc_bak/mc_db/2022-11-10/23/money/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./money/xconomy.frm to /mc_bak/mc_db/2022-11-10/23/money/xconomy.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./money/xconomyrecord.frm to /mc_bak/mc_db/2022-11-10/23/money/xconomyrecord.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/db.opt to /mc_bak/mc_db/2022-11-10/23/quickshop/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_data.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_data.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_external_cache.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_external_cache.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_log_changes.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_changes.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_log_others.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_others.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_log_purchase.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_purchase.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_log_transaction.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_log_transaction.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_message.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_message.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_metadata.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_metadata.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_players.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_players.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_shop_map.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_shop_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./quickshop/qs_shops.frm to /mc_bak/mc_db/2022-11-10/23/quickshop/qs_shops.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./tab/db.opt to /mc_bak/mc_db/2022-11-10/23/tab/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./tab/tab_groups.frm to /mc_bak/mc_db/2022-11-10/23/tab/tab_groups.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./tab/tab_users.frm to /mc_bak/mc_db/2022-11-10/23/tab/tab_users.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./trixey/db.opt to /mc_bak/mc_db/2022-11-10/23/trixey/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./trixey/trchat_user_data.frm to /mc_bak/mc_db/2022-11-10/23/trixey/trchat_user_data.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./trmenu/db.opt to /mc_bak/mc_db/2022-11-10/23/trmenu/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./trmenu/trmenu_user_data.frm to /mc_bak/mc_db/2022-11-10/23/trmenu/trmenu_user_data.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/db.opt to /mc_bak/mc_db/2022-11-10/23/CoreProtect/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_art_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_block.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_chat.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_command.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_container.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_item.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_entity.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_material_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_session.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_sign.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_skull.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_user.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_username_log.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_version.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d1_world.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d1_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_art_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_block.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_chat.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_command.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_container.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_item.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_entity.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_material_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_session.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_sign.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_skull.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_user.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_username_log.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_version.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s2_world.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s2_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_art_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_block.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_chat.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_command.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_container.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_item.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_entity.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_material_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_session.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_sign.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_skull.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_user.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_username_log.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_version.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s1_world.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s1_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_art_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_block.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_chat.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_command.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_container.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_item.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_entity.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_material_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_session.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_sign.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_skull.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_user.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_username_log.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_version.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_d2_world.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_d2_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_art_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_block.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_chat.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_command.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_container.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_item.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_entity.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_material_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_session.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_sign.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_skull.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_user.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_username_log.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_version.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s3_world.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s3_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_art_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_block.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_chat.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_command.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_container.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_item.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_entity.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_material_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_session.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_sign.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_skull.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_user.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_username_log.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_version.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s4_world.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s4_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_art_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_block.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_chat.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_command.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_container.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_item.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_entity.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_material_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_session.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_sign.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_skull.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_user.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_username_log.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_version.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./CoreProtect/cp_s5_world.frm to /mc_bak/mc_db/2022-11-10/23/CoreProtect/cp_s5_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./InvSync/db.opt to /mc_bak/mc_db/2022-11-10/23/InvSync/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./InvSync/PlayerData.frm to /mc_bak/mc_db/2022-11-10/23/InvSync/PlayerData.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./KnapsackToGo4/db.opt to /mc_bak/mc_db/2022-11-10/23/KnapsackToGo4/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./KnapsackToGo4/PlayerData.frm to /mc_bak/mc_db/2022-11-10/23/KnapsackToGo4/PlayerData.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./KnapsackToGo4/LockServer.frm to /mc_bak/mc_db/2022-11-10/23/KnapsackToGo4/LockServer.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/db.opt to /mc_bak/mc_db/2022-11-10/23/grafana/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/migration_log.frm to /mc_bak/mc_db/2022-11-10/23/grafana/migration_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/short_url.frm to /mc_bak/mc_db/2022-11-10/23/grafana/short_url.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user.frm to /mc_bak/mc_db/2022-11-10/23/grafana/user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/cache_data.frm to /mc_bak/mc_db/2022-11-10/23/grafana/cache_data.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_rule.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_rule.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/report.frm to /mc_bak/mc_db/2022-11-10/23/grafana/report.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/temp_user.frm to /mc_bak/mc_db/2022-11-10/23/grafana/temp_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/star.frm to /mc_bak/mc_db/2022-11-10/23/grafana/star.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/org.frm to /mc_bak/mc_db/2022-11-10/23/grafana/org.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/org_user.frm to /mc_bak/mc_db/2022-11-10/23/grafana/org_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/entity_event.frm to /mc_bak/mc_db/2022-11-10/23/grafana/entity_event.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_tag.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_tag.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/query_history.frm to /mc_bak/mc_db/2022-11-10/23/grafana/query_history.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_notification_state.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_notification_state.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/annotation.frm to /mc_bak/mc_db/2022-11-10/23/grafana/annotation.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/correlation.frm to /mc_bak/mc_db/2022-11-10/23/grafana/correlation.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team.frm to /mc_bak/mc_db/2022-11-10/23/grafana/team.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/tag.frm to /mc_bak/mc_db/2022-11-10/23/grafana/tag.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/login_attempt.frm to /mc_bak/mc_db/2022-11-10/23/grafana/login_attempt.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/server_lock.frm to /mc_bak/mc_db/2022-11-10/23/grafana/server_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/permission.frm to /mc_bak/mc_db/2022-11-10/23/grafana/permission.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_public.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_public.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_auth.frm to /mc_bak/mc_db/2022-11-10/23/grafana/user_auth.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/role.frm to /mc_bak/mc_db/2022-11-10/23/grafana/role.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_provisioning.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_provisioning.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_auth_token.frm to /mc_bak/mc_db/2022-11-10/23/grafana/user_auth_token.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source.frm to /mc_bak/mc_db/2022-11-10/23/grafana/data_source.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/secrets.frm to /mc_bak/mc_db/2022-11-10/23/grafana/secrets.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_role.frm to /mc_bak/mc_db/2022-11-10/23/grafana/user_role.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/api_key.frm to /mc_bak/mc_db/2022-11-10/23/grafana/api_key.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_rule_tag.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_rule_tag.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_notification.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_notification.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/test_data.frm to /mc_bak/mc_db/2022-11-10/23/grafana/test_data.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_version.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team_member.frm to /mc_bak/mc_db/2022-11-10/23/grafana/team_member.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_acl.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_acl.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_instance.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_instance.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/setting.frm to /mc_bak/mc_db/2022-11-10/23/grafana/setting.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_snapshot.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_snapshot.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/quota.frm to /mc_bak/mc_db/2022-11-10/23/grafana/quota.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/plugin_setting.frm to /mc_bak/mc_db/2022-11-10/23/grafana/plugin_setting.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/session.frm to /mc_bak/mc_db/2022-11-10/23/grafana/session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/playlist.frm to /mc_bak/mc_db/2022-11-10/23/grafana/playlist.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/playlist_item.frm to /mc_bak/mc_db/2022-11-10/23/grafana/playlist_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_keys.frm to /mc_bak/mc_db/2022-11-10/23/grafana/data_keys.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/query_history_star.frm to /mc_bak/mc_db/2022-11-10/23/grafana/query_history_star.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/preferences.frm to /mc_bak/mc_db/2022-11-10/23/grafana/preferences.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/file.frm to /mc_bak/mc_db/2022-11-10/23/grafana/file.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/annotation_tag.frm to /mc_bak/mc_db/2022-11-10/23/grafana/annotation_tag.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team_role.frm to /mc_bak/mc_db/2022-11-10/23/grafana/team_role.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_rule_version.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_rule_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/kv_store.frm to /mc_bak/mc_db/2022-11-10/23/grafana/kv_store.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_configuration.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_configuration.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/ngalert_configuration.frm to /mc_bak/mc_db/2022-11-10/23/grafana/ngalert_configuration.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/provenance_type.frm to /mc_bak/mc_db/2022-11-10/23/grafana/provenance_type.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/alert_image.frm to /mc_bak/mc_db/2022-11-10/23/grafana/alert_image.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/library_element.frm to /mc_bak/mc_db/2022-11-10/23/grafana/library_element.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/library_element_connection.frm to /mc_bak/mc_db/2022-11-10/23/grafana/library_element_connection.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/builtin_role.frm to /mc_bak/mc_db/2022-11-10/23/grafana/builtin_role.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/file_meta.frm to /mc_bak/mc_db/2022-11-10/23/grafana/file_meta.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source_usage_by_day.frm to /mc_bak/mc_db/2022-11-10/23/grafana/data_source_usage_by_day.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_usage_by_day.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_usage_by_day.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_usage_sums.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_usage_sums.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/dashboard_public_usage_by_day.frm to /mc_bak/mc_db/2022-11-10/23/grafana/dashboard_public_usage_by_day.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_dashboard_views.frm to /mc_bak/mc_db/2022-11-10/23/grafana/user_dashboard_views.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/user_stats.frm to /mc_bak/mc_db/2022-11-10/23/grafana/user_stats.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source_cache.frm to /mc_bak/mc_db/2022-11-10/23/grafana/data_source_cache.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/data_source_acl.frm to /mc_bak/mc_db/2022-11-10/23/grafana/data_source_acl.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/license_token.frm to /mc_bak/mc_db/2022-11-10/23/grafana/license_token.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/recording_rules.frm to /mc_bak/mc_db/2022-11-10/23/grafana/recording_rules.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/remote_write_targets.frm to /mc_bak/mc_db/2022-11-10/23/grafana/remote_write_targets.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/report_settings.frm to /mc_bak/mc_db/2022-11-10/23/grafana/report_settings.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/report_dashboards.frm to /mc_bak/mc_db/2022-11-10/23/grafana/report_dashboards.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/team_group.frm to /mc_bak/mc_db/2022-11-10/23/grafana/team_group.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./grafana/seed_assignment.frm to /mc_bak/mc_db/2022-11-10/23/grafana/seed_assignment.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_VentureChat/db.opt to /mc_bak/mc_db/2022-11-10/23/test_VentureChat/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_VentureChat/VentureChat.frm to /mc_bak/mc_db/2022-11-10/23/test_VentureChat/VentureChat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_money/db.opt to /mc_bak/mc_db/2022-11-10/23/test_money/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_money/xconomy.frm to /mc_bak/mc_db/2022-11-10/23/test_money/xconomy.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_money/xconomyrecord.frm to /mc_bak/mc_db/2022-11-10/23/test_money/xconomyrecord.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/db.opt to /mc_bak/mc_db/2022-11-10/23/test_minecraft/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_user_permissions.frm to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_user_permissions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_group_permissions.frm to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_group_permissions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_players.frm to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_players.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_groups.frm to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_groups.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_actions.frm to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_actions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_tracks.frm to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_tracks.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_minecraft/luckperms_messenger.frm to /mc_bak/mc_db/2022-11-10/23/test_minecraft/luckperms_messenger.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_KnapsackToGo4/db.opt to /mc_bak/mc_db/2022-11-10/23/test_KnapsackToGo4/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_KnapsackToGo4/PlayerData.frm to /mc_bak/mc_db/2022-11-10/23/test_KnapsackToGo4/PlayerData.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_KnapsackToGo4/LockServer.frm to /mc_bak/mc_db/2022-11-10/23/test_KnapsackToGo4/LockServer.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_trmenu/db.opt to /mc_bak/mc_db/2022-11-10/23/test_trmenu/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_trmenu/trmenu_user_data.frm to /mc_bak/mc_db/2022-11-10/23/test_trmenu/trmenu_user_data.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_authme/db.opt to /mc_bak/mc_db/2022-11-10/23/test_authme/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_authme/test_authme.frm to /mc_bak/mc_db/2022-11-10/23/test_authme/test_authme.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/db.opt to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_art_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_block.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_chat.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_command.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_container.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_item.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_entity.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_material_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_session.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_sign.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_skull.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_user.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_username_log.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_version.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s1_world.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s1_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_art_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_art_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_block.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_block.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_chat.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_chat.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_command.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_command.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_container.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_container.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_item.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_item.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_database_lock.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_database_lock.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_entity.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_entity.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_entity_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_entity_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_material_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_material_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_blockdata_map.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_blockdata_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_session.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_session.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_sign.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_sign.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_skull.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_skull.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_user.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_user.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_username_log.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_username_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_version.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_version.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_CoreProtect/cp_s2_world.frm to /mc_bak/mc_db/2022-11-10/23/test_CoreProtect/cp_s2_world.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/db.opt to /mc_bak/mc_db/2022-11-10/23/test_quickshop/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_data.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_data.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_shops.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_shops.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_shop_map.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_shop_map.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_message.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_message.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_metadata.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_metadata.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_players.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_players.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_external_cache.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_external_cache.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_purchase.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_purchase.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_transaction.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_transaction.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_changes.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_changes.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_quickshop/qs_log_others.frm to /mc_bak/mc_db/2022-11-10/23/test_quickshop/qs_log_others.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/db.opt to /mc_bak/mc_db/2022-11-10/23/Plan/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_servers.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_servers.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_users.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_users.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_user_info.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_user_info.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_geolocations.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_geolocations.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_nicknames.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_nicknames.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_join_address.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_join_address.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_sessions.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_sessions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_kills.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_kills.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_ping.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_ping.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_tps.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_tps.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_worlds.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_worlds.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_world_times.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_world_times.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_security.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_security.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_settings.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_settings.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_cookies.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_cookies.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_access_log.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_access_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_icons.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_icons.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_plugins.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_plugins.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_tabs.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_tabs.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_providers.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_providers.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_user_values.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_user_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_server_values.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_server_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_tables.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_tables.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_user_table_values.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_user_table_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_server_table_values.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_server_table_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_extension_groups.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_extension_groups.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./Plan/plan_version_protocol.frm to /mc_bak/mc_db/2022-11-10/23/Plan/plan_version_protocol.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_tab/db.opt to /mc_bak/mc_db/2022-11-10/23/test_tab/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_tab/tab_groups.frm to /mc_bak/mc_db/2022-11-10/23/test_tab/tab_groups.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_tab/tab_users.frm to /mc_bak/mc_db/2022-11-10/23/test_tab/tab_users.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/db.opt to /mc_bak/mc_db/2022-11-10/23/test_Plan/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_servers.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_servers.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_users.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_users.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_user_info.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_user_info.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_geolocations.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_geolocations.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_nicknames.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_nicknames.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_join_address.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_join_address.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_sessions.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_sessions.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_kills.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_kills.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_ping.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_ping.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_tps.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_tps.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_worlds.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_worlds.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_world_times.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_world_times.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_security.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_security.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_settings.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_settings.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_cookies.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_cookies.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_access_log.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_access_log.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_icons.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_icons.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_plugins.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_plugins.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_tabs.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_tabs.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_providers.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_providers.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_user_values.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_user_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_server_values.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_server_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_tables.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_tables.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_user_table_values.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_user_table_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_server_table_values.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_server_table_values.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./test_Plan/plan_extension_groups.frm to /mc_bak/mc_db/2022-11-10/23/test_Plan/plan_extension_groups.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./skin/db.opt to /mc_bak/mc_db/2022-11-10/23/skin/db.opt
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./skin/Players.frm to /mc_bak/mc_db/2022-11-10/23/skin/Players.frm
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./skin/Skins.frm to /mc_bak/mc_db/2022-11-10/23/skin/Skins.frm
+[01] 2022-11-10 23:01:06         ...done
+[00] 2022-11-10 23:01:06 Finished backing up non-InnoDB tables and files
+[01] 2022-11-10 23:01:06 Copying ./aria_log_control to /mc_bak/mc_db/2022-11-10/23/aria_log_control
+[01] 2022-11-10 23:01:06         ...done
+[01] 2022-11-10 23:01:06 Copying ./aria_log.00000001 to /mc_bak/mc_db/2022-11-10/23/aria_log.00000001
+[01] 2022-11-10 23:01:06         ...done
+[00] 2022-11-10 23:01:06 Waiting for log copy thread to read lsn 10641385431
+[00] 2022-11-10 23:01:06 >> log scanned up to (10641385410)
+[00] 2022-11-10 23:01:07 >> log scanned up to (10641385431)
+[00] 2022-11-10 23:01:07 Executing FLUSH NO_WRITE_TO_BINLOG ENGINE LOGS...
+[00] 2022-11-10 23:01:07 mariabackup: The latest check point (for incremental): '10641383013'
+mariabackup: Stopping log copying thread.[00] 2022-11-10 23:01:07 >> log scanned up to (10641385431)
+
+[00] 2022-11-10 23:01:07 >> log scanned up to (10641385431)
+[00] 2022-11-10 23:01:07 Executing UNLOCK TABLES
+[00] 2022-11-10 23:01:07 All tables unlocked
+[00] 2022-11-10 23:01:07 Copying ib_buffer_pool to /mc_bak/mc_db/2022-11-10/23/ib_buffer_pool
+[00] 2022-11-10 23:01:07         ...done
+[00] 2022-11-10 23:01:07 Backup created in directory '/mc_bak/mc_db/2022-11-10/23/'
+[00] 2022-11-10 23:01:07 Writing backup-my.cnf
+[00] 2022-11-10 23:01:07         ...done
+[00] 2022-11-10 23:01:07 Writing xtrabackup_info
+[00] 2022-11-10 23:01:07         ...done
+[00] 2022-11-10 23:01:07 Redo log (from LSN 10641381131 to 10641385431) was copied.
+[00] 2022-11-10 23:01:07 completed OK!
